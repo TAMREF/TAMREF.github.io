@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-    <div style="margin: -15px 0px 0px 15px;color: #808080;opacity: 0.7;font-size: 13pt">
+    <div style="margin: -15px 0px 0px 15px;color: #808080;opacity: 0.7;font-size: 13pt;font-family: Arial">
     {% if page.categories != empty or page.tags != empty %}
         {% include category_links.html categories=page.categories tags=page.tags%}
     {% endif %}

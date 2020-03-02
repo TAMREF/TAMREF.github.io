@@ -58,6 +58,17 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+#Navigations
+navigation:
+ - title: About
+   url: /about
+ - title: Blog
+   url: /
+ - title: Category
+   url: /category
+ - title: Tags
+   url: /tags
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
