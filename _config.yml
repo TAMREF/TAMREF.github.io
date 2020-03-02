@@ -1,14 +1,22 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      pygments
-
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+  lsi: false
+  excerpt_separator: "\n\n"
+  incremental: false
 # Permalinks
-permalink:        pretty
+permalink: /:title/
 
 # Setup
 title:            TAMREF의 PS 블로그
 tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      탐레프의 수학문제, PS 이야기
 url:              http://hyde.getpoole.com
 baseurl:          /
 
@@ -23,3 +31,10 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
