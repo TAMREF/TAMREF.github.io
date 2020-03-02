@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: math, combinatorics
+tags: [math, combinatorics]
 title: Cayley’s theorem in combinatorics
 use_math: true
 date: 2019-12-11 04:21
