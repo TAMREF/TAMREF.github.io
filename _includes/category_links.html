@@ -1,4 +1,4 @@
-{% if include.categories != empty %} -
+{% if include.categories != empty %} ―
   {% for category in include.categories %}
   
   <a href="/category/#{{ category | escape }}">{{ category | escape }}</a>
@@ -13,7 +13,7 @@
 {% endif %}
 
 {% if include.tags.size > 0 %}
-  - [{% for tag in include.tags %}
+  ― [{% for tag in include.tags %}
       <a href="/tags/archives#{{ tag | escape }}">{{tag}}</a>
       {% if forloop.index != include.tags.size %},{% endif %} 
     {% endfor %}]

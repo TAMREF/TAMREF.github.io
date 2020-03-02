@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, a {
+h1, h2, h3, h4, h5, h6, p, ul, ol {
     font-family: "Nanum Myeongjo", ;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +72,7 @@ p {
 }
 
 a {
+  font-family: inherit;
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
@@ -197,7 +198,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: "Source Sans Pro";
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
