@@ -12,6 +12,17 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
+    <div>
+    ** 태그표시 시작 **
+      <br>
+    {% if page.tags != empty %}
+      [{% for tag in page.tags %}
+          <a href="/tags/archives#{{ tag | escape }}">{{tag}}</a>
+          {% if forloop.index != page.tags.size %},{% endif %} 
+        {% endfor %}]
+    {% endif %}
+      <br>
+    ** 태그표시 끝 **
+    </div>
   {% include disqus.html %}
 </article>
