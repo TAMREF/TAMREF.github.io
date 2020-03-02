@@ -26,10 +26,10 @@ permalink: /:title/
 title:            TAMREF의 PS 블로그
 tagline:          'A Jekyll theme'
 description:      탐레프의 수학문제, PS 이야기
-#url:              http://hyde.getpoole.com
-#baseurl:          /
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+tags: ['Misc']
+category: ['None']
 
 #
 # Flags below are optional
