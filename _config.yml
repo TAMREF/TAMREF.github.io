@@ -7,7 +7,7 @@ name: TAMREF
 
 # Short bio or description (displayed in the header)
 description: 탐레프의 수학문제, PS 이야기
-avatar: ./images/myface.png
+avatar: /images/myface.png
 # Dependencies
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
