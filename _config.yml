@@ -31,6 +31,7 @@ collections:
  psets:
     output: true
     permalink: /:title/
+    contest_name:
 
 # CusTAMization
 contest_name: #For PSET tag
