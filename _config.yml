@@ -28,7 +28,8 @@ permalink: /:title/
 
 #Collection
 collections:
-- psets
+ psets:
+    output: true
 
 # Includes an icon in the footer for each username you enter
 footer-links:
