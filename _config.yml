@@ -71,10 +71,8 @@ baseurl: ""
 
 #Navigations
 navigation:
- - title: About
+ - title: About Me
    url: /about
- - title: Blog
-   url: /
  - title: Category
    url: /category
  - title: Tags
