@@ -11,11 +11,11 @@ layout: default
   </div>
 <div class="Problem list">
     Problems and Write-Up
-    <ol start="A">
+    <ul>
     {%for post in site.tags[page.contest_name]%}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {%endfor%}
-    </ol>
+    </ul>
 </div>
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
