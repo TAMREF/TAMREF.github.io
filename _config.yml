@@ -34,7 +34,6 @@ collections:
     contest_name:
 
 # CusTAMization
-contest_name: #For PSET tag
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -69,16 +68,6 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#Navigations
-navigation:
- - title: About Me
-   url: /about
- - title: Category
-   url: /category
- - title: Tags
-   url: /tags
- - title: Problemset
-   url: /problemset
 
 #
 # !! You don't need to change any of the configuration flags below !!
