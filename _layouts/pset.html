@@ -10,9 +10,12 @@ layout: default
     {{ content }}
   </div>
 <div class="Problem list">
+    Problems and Write-Up
+    <ol start="A">
     {%for post in site.tags[page.contest_name]%}
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {%endfor%}
+    </ol>
 </div>
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
