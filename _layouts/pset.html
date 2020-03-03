@@ -13,7 +13,8 @@ layout: default
     <h2>Problems and Write-Up</h2>
     <hr class = "custom"/>
     <ul>
-    {%for post in {{site.tags[page.contest_name] | sort }} %}
+    {%assign sortedlist = site.tags[page.contest_name] | sort %}
+    {%for post in sortedlist %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {%endfor%}
     </ul>
