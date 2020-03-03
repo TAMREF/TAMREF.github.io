@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="psets">
+    <h1>Problemsets & Editorial</h1>
+  {% for pset in site.categories.pset %}
+  {% if pset.hidden != true %}
+    <article class="pset">
+
+      <h1><a href="{{ site.baseurl }}{{ pset.url }}">{{ pset.title }}</a></h1>
+
+      <div class="entry">
+        {{ pset.excerpt }}
+      </div>
+        <span class="date">{{pset.date | date: "%B %e, %Y   "}}<a href="{{ site.baseurl }}{{ pset.url }}" class="read-more">(Read More...)</a></span>
+    </article>
+  {% endif %}
+  {% endfor %}
+</div>
