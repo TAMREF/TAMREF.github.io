@@ -10,7 +10,7 @@ layout: default
     {{ content }}
   </div>
 <div class="Problem list">
-    {%for post in site.contest_name[page.contest_name]%}
+    {%for post in site.tags[page.contest_name]%}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
     {%endfor%}
 </div>
