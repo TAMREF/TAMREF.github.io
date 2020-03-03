@@ -32,6 +32,9 @@ collections:
     output: true
     permalink: /:title/
 
+# CusTAMization
+contest_name: #For PSET tag
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
