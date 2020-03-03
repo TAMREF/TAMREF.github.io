@@ -10,7 +10,7 @@ permalink: /about/
 
 ### Affiliation
 
-- Dept. of Chemistry, College of Natural Sciecne, Seoul National University (2019.3-Present)
+- Dept. of Chemistry, College of Natural Sciecne, Seoul National University (Undergraduate student, 2019.3-Present)
 - Seoul Science High School (2016.3-2019.2)
 - [Team Woodencompass](https://facebook.com/teamwoodencompass)
 
