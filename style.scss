@@ -290,3 +290,11 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+hr.custom {
+    width: 95%;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.2;
+}

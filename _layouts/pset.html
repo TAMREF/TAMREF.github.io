@@ -10,7 +10,8 @@ layout: default
     {{ content }}
   </div>
 <div class="Problem list">
-    <p>Problems and Write-Up</p>
+    <h2>Problems and Write-Up</h2>
+    <hr class = "custom"/>
     <ul>
     {%for post in site.tags[page.contest_name]%}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>

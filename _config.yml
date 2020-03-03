@@ -79,6 +79,8 @@ navigation:
    url: /category
  - title: Tags
    url: /tags
+ - title: Problemset
+   url: /problemset
 
 #
 # !! You don't need to change any of the configuration flags below !!
