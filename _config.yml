@@ -26,6 +26,10 @@ permalink: /:title/
 # Flags below are optional
 #
 
+#Collection
+collections:
+- psets
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
