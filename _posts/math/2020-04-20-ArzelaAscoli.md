@@ -36,7 +36,7 @@ $$
 
 
 
-*Proof.* Given $$\varepsilon > 0$$에 대해, $$f$$는 연속함수이므로 $$\forall y \in X \cap N_{\delta (x)}(x)$$ $$\norm{f(x) - f(y)} < \varepsilon/2$$을 만족하도록 각 $$x$$에 대해 양수 $$\delta(x) > 0$$을 잡을 수 있다. 이 때, $$\{N_{\delta(x)/2}(x)\}_{x \in X}$$는 $$X$$의 cover가 되고, $$X$$는 cpt set이므로 finite subcover가 존재한다. 이를 $$\{N_{\delta(x_i)/2}(x_i)\}_{i=1,\cdots,n}$$이라고 두자. $\delta := \min_{i}\{\frac{\delta(x_i)}{2}\}$가 조건 $$(\ref{def:ufcon})$$ 을 만족함을 보이자.
+*Proof.* Given $$\varepsilon > 0$$에 대해, $$f$$는 연속함수이므로 $$\forall y \in X \cap N_{\delta (x)}(x)$$ $$\norm{f(x) - f(y)} < \varepsilon/2$$을 만족하도록 각 $$x$$에 대해 양수 $$\delta(x) > 0$$을 잡을 수 있다. 이 때, $$\{N_{\delta(x)/2}(x)\}_{x \in X}$$는 $$X$$의 cover가 되고, $$X$$는 cpt set이므로 finite subcover가 존재한다. 이를 $$\{N_{\delta(x_i)/2}(x_i)\}_{i=1,\cdots,n}$$이라고 두자. $$\delta := \min_{i}\{\frac{\delta(x_i)}{2}\}$$가 조건 $$(\ref{def:ufcon})$$ 을 만족함을 보이자.
 
 $$\norm{x-y} < \delta$$라고 하자. 이 때, $$\norm{x - x_{i}} < \frac{\delta(x_{i})}{2}$$를 만족하는 $$x_{i}$$가 존재한다. 이 때 $$\norm{y - x_{i}} \le \norm{x - x_{i}} + \norm{y - x} < \delta + \frac{\delta(x_{i})}{2} < \delta(x_{i}) $$이므로 $$x,y$$는 모두 $$N_{\delta(x_{i})}(x_{i})$$의 element이다. 따라서 $$\norm{f(x) - f(y)} \le \norm{f(x) - f(x_i)} + \norm{f(y) - f(x_i)} < \varepsilon$$이 성립하고, 조건 $$(\ref{def:ufcon})$$이 증명되었다. $$\square$$
 
@@ -88,7 +88,7 @@ $$
 
 **Arzela - Ascoli Theorem.** cpt set $$X$$에 대해, metric space $$C(X)$$의 부분집합 $$\mc{F}$$가 (점별)유계이고 equicontinuous이면 $$\mc{F}$$ 안의 임의의 함수열 $$\ev{f_n}$$은 수렴하는 부분수열을 갖는다. 특별히 $$\mc{F}$$가 closed이면, $$\mc{F}$$는 sequentially compact하다; 따라서 $$\mc{F}$$가 closed, (pointwise-)bounded, equicontinuous하면 $$\mc{F}$$는 compact하다.
 
-*Proof.* 자연수 $N$에 대해 $$\{N_{1/n}(x) \mid x \in X\}$$는 $$X$$의 open cover가 되고, $$X$$가 compact니까 finite subcover가 존재한다. 이 subcover에서 open ball들의 중심만 모아놓은 유한집합을 $$D_{n}$$이라고 하자.
+*Proof.* 자연수 $$N$$에 대해 $$\{N_{1/n}(x) \mid x \in X\}$$는 $$X$$의 open cover가 되고, $$X$$가 compact니까 finite subcover가 존재한다. 이 subcover에서 open ball들의 중심만 모아놓은 유한집합을 $$D_{n}$$이라고 하자.
 $$
 D := \bigcup_{i=1}^{\infty} D_{i}
 $$
