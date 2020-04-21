@@ -130,4 +130,4 @@ $$
   $$
   이므로 $$\mc{F}$$는 equicontinuous.$$\square$$
 
-따라서 Arzela-Ascoli theorem에 의해 $$\mc{F}$$는 equicontinuous.
+따라서 Arzela-Ascoli theorem에 의해 $$\mc{F}$의 임의의 함수열은 수렴하는 부분수열을 갖는다.
