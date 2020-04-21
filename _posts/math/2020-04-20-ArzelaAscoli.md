@@ -16,7 +16,7 @@ Ref: 김성기, 김도한, 계승혁 - 해석개론
 
 <!--more-->
 
-$$\renewcommand\norm[1]{\left\lVert#1\right\rVert}\newcommand{\ev}[1]{\left<#1\right>}\newcommand{\mb}{\mathbb}\newcommand{\mc}{\mathcal}$$
+$$\renewcommand\norm[1]{\left\lVert#1\right\rVert}\newcommand{\ev}[1]{\left<#1\right>}\newcommand{\mb}{\mathbb}\newcommand{\mc}{\mathcal}\renewcommand\abs[1]{\left\lvert #1 \right\rvert}$$
 
 * $$N_{\varepsilon}(x) := \{y \mid \norm{x - y} < \varepsilon \}$$. 무엇의 부분집합인지는 context에 의존한다.
 
@@ -24,7 +24,7 @@ $$\renewcommand\norm[1]{\left\lVert#1\right\rVert}\newcommand{\ev}[1]{\left<#1\r
 
 함수 $$f$$가 정의역 $$X$$에서 uniformly continuous하다는 말은, given $\varepsilon > 0$에 대해
 $$
-\exist \delta \; \forall x, y \in X \quad \norm{x-y} < \delta \implies \norm{f(x) - f(y)} < \varepsilon \label{def:ufcon}
+\exists \delta \; \forall x, y \in X \quad \norm{x-y} < \delta \implies \norm{f(x) - f(y)} < \varepsilon \label{def:ufcon}
 $$
 를 만족한다는 것을 말한다.
 
@@ -36,9 +36,9 @@ $$
 
 
 
-*Proof.* Given $$\varepsilon > 0$$에 대해, $$f$$는 연속함수이므로 $$\forall y \in X \cap N_{\delta (x)}(x)$$ $$\norm{f(x) - f(y)} < \varepsilon/2$$을 만족하도록 각 $$x$$에 대해 양수 $$\delta(x) > 0$$을 잡을 수 있다. 이 때, $$\{N_{\delta(x)/2}(x)\}_{x \in X}$$는 $$X$$의 cover가 되고, $$X$$는 cpt set이므로 finite subcover가 존재한다. 이를 $$\{N_{\delta(x_i)/2}(x_i)\}_{i=1,\cdots,n}$$이라고 두자. $$\delta := \min_{i}\{\frac{\delta(x_i)}{2}\}$$가 조건 $$(\ref{def:ufcon})$$ 을 만족함을 보이자.
+*Proof.* Given $$\varepsilon > 0$$에 대해, $$f$$는 연속함수이므로 $$\forall y \in X \cap N_{\delta (x)}(x)$$ $$\norm{f(x) - f(y)} < \varepsilon/2$$을 만족하도록 각 $$x$$에 대해 양수 $$\delta(x) > 0$$을 잡을 수 있다. 이 때, $$\{N_{\delta(x)/2}(x)\}_{x \in X}$$는 $$X$$의 cover가 되고, $$X$$는 cpt set이므로 finite subcover가 존재한다. 이를 $$\{N_{\delta(x_i)/2}(x_i)\}_{i=1,\cdots,n}$$이라고 두자. $$\delta := \min_{i}\{\frac{\delta(x_i)}{2}\}$$가 조건을 만족함을 보이자.
 
-$$\norm{x-y} < \delta$$라고 하자. 이 때, $$\norm{x - x_{i}} < \frac{\delta(x_{i})}{2}$$를 만족하는 $$x_{i}$$가 존재한다. 이 때 $$\norm{y - x_{i}} \le \norm{x - x_{i}} + \norm{y - x} < \delta + \frac{\delta(x_{i})}{2} < \delta(x_{i}) $$이므로 $$x,y$$는 모두 $$N_{\delta(x_{i})}(x_{i})$$의 element이다. 따라서 $$\norm{f(x) - f(y)} \le \norm{f(x) - f(x_i)} + \norm{f(y) - f(x_i)} < \varepsilon$$이 성립하고, 조건 $$(\ref{def:ufcon})$$이 증명되었다. $$\square$$
+$$\norm{x-y} < \delta$$라고 하자. 이 때, $$\norm{x - x_{i}} < \frac{\delta(x_{i})}{2}$$를 만족하는 $$x_{i}$$가 존재한다. 이 때 $$\norm{y - x_{i}} \le \norm{x - x_{i}} + \norm{y - x} < \delta + \frac{\delta(x_{i})}{2} < \delta(x_{i}) $$이므로 $$x,y$$는 모두 $$N_{\delta(x_{i})}(x_{i})$$의 element이다. 따라서 $$\norm{f(x) - f(y)} \le \norm{f(x) - f(x_i)} + \norm{f(y) - f(x_i)} < \varepsilon$$이 성립하고, 따라서 $$f$$는 uniformly continuous. $$\square$$
 
 
 
@@ -98,7 +98,7 @@ $$
 
 똑같이 $$\ev{f_{1n} (x_2)}$$를 생각하면 이 녀석도 수렴하는 부분수열을 갖는다. 이를 $$\ev{f_{2n}(x_2)}$$라고 하자. 계속해서 $$\ev{f_{in}(x_{i+1})}$$의 수렴하는 부분수열을 $$\ev{f_{i+1,n}(x_{i+1})}$$로 정의하면 함수열 $$\ev{f_{in}(x_i)}$$는 $$x_1, \cdots, x_i$$에서 수렴하는 $$\ev{f_n}$$의 부분수열이 되고, $$\ev{f_{i+1,n}}$$은 $$\ev{f_{in}}$$의 부분수열이 됨에 주목하자. $$g_{k} := f_{kk}$$로 두면 $$\ev{g_k}$$는 $$\ev{f_n}$$의 (중복 없는) 부분수열이 되고, 각 $$x_i$$에서 점별-수렴하는 함수열이다. 이제 $$\ev{g_n}$$이 (균등-)수렴하는 수열임을 보이자.
 
-$$\mc{F}$$가 동등연속이므로, Given $$\varepsilon > 0$$에 대해 $$(\ref{def:eqcon})$$을 만족하는 양수 $$\delta > 0$$을 잡을 수 있다. $$\overline{D} = X$$이므로 $$\{N_{\delta}(x_{i})\}_{i \ge 1}$$은 $$X$$의 open cover가 되고, finite subcover가 존재해서 자연수 $$p$$에 대해 $$X \subset N_{\delta}(x_{i_1}) \cup \cdots \cup N_{\delta}(x_{i_p})$$가 성립한다. 즉, 임의의 $$x \in X$$에 대해 $$\norm{x - x_{i_j}} < \delta$$인 $$j \in \{1, \cdots,p\}$$가 존재한다. 편의상 $$x^{*} := x_{i_j}$$로 두자. 이 때 $$\ev{g_n}$$은 $$x^{*}$$에서 수렴하므로, 임의의 $$u, v \ge N$$에 대해 $$\norm{g_u (x^{*}) - g_v (x^{*})} < \varepsilon$$을 만족하는 자연수 $$N$$이 존재한다. 따라서 $$\norm{g_u (x) - g_v (x)} \le \norm{g_u (x) - g_u (x^{*})} + \norm{g_u(x^{*}) - g_v(x^{*})} + \norm{g_v (x^{*}) - g_v (x)} < 3\varepsilon$$이 성립하고, $$u, v \ge N$$에 대해 $$\norm{g_u - g_v}_{\sup} \le 3\varepsilon$$이 되므로 $$\ev{g_n}$$은 Cauchy이고, 따라서 수렴한다. $$\square$$
+$$\mc{F}$$가 동등연속이므로, Given $$\varepsilon > 0$$에 대해 $$\forall f \in \mc{F}, \forall x, y \in X\;\; \norm{x-y} < \delta \implies \norm{f(x) - f(y)} < \varepsilon $$을 만족하는 양수 $$\delta > 0$$을 잡을 수 있다. $$\overline{D} = X$$이므로 $$\{N_{\delta}(x_{i})\}_{i \ge 1}$$은 $$X$$의 open cover가 되고, finite subcover가 존재해서 자연수 $$p$$에 대해 $$X \subset N_{\delta}(x_{i_1}) \cup \cdots \cup N_{\delta}(x_{i_p})$$가 성립한다. 즉, 임의의 $$x \in X$$에 대해 $$\norm{x - x_{i_j}} < \delta$$인 $$j \in \{1, \cdots,p\}$$가 존재한다. 편의상 $$x^{*} := x_{i_j}$$로 두자. 이 때 $$\ev{g_n}$$은 $$x^{*}$$에서 수렴하므로, 임의의 $$u, v \ge N$$에 대해 $$\norm{g_u (x^{*}) - g_v (x^{*})} < \varepsilon$$을 만족하는 자연수 $$N$$이 존재한다. 따라서 $$\norm{g_u (x) - g_v (x)} \le \norm{g_u (x) - g_u (x^{*})} + \norm{g_u(x^{*}) - g_v(x^{*})} + \norm{g_v (x^{*}) - g_v (x)} < 3\varepsilon$$이 성립하고, $$u, v \ge N$$에 대해 $$\norm{g_u - g_v}_{\sup} \le 3\varepsilon$$이 되므로 $$\ev{g_n}$$은 Cauchy이고, 따라서 수렴한다. $$\square$$
 
 **Example 6.**
 
