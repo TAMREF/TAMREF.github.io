@@ -12,7 +12,8 @@ Riemann Mapping은 $$\mathbb{C}$$의 모든 simply connected proper subset $$\Om
 Ref: Stein & Shakarchi, Complex Analysis Ch.8
 
 <!--more-->
-$$\newcommand{\mb}{\mathbb}$$ $$\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}$$ $$\newcommand{\mr}{\mathrm}$$ $$\newcommand{\mbf}{\mathbf}$$ $$\newcommand{\ev}[1]{\left< #1 \right>}$$
+$$\newcommand{\mb}{\mathbb}$$ $$\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}$$ $$\newcommand{\mr}{\mathrm}$$ $$\newcommand{\mbf}{\mathbf}$$ 
+$$\newcommand{\mc}{\mathcal}$$ $$\newcommand{\ev}[1]{\left< #1 \right>}$$
 
 ## Montel’s theorem
 
