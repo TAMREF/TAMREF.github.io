@@ -10,7 +10,6 @@ permalink: /ec/
 - {{lec.path}} {{lec.basename}}
 {% endfor %}
 
-{% endfor %}
 {%assign lecs = site.static_files | where: "path", "/pdf/enumcomb/"%}
 
 {%assign sorted_lecs = lecs | sort: file.basename%}
