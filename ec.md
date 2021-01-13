@@ -6,6 +6,7 @@ permalink: /ec/
 
 ## Enumerative Combinatorics Study @SSHS MWT
 
+```liquid
 {%assign lecs = site.static_files | where: “pdf/enumcomb”, true%}
 
 {%assign sorted_lecs = lecs | sort: file.basename%}
@@ -19,3 +20,5 @@ permalink: /ec/
 {%endfor%}
 
 </ul>
+```
+
