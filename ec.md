@@ -6,11 +6,7 @@ permalink: /ec/
 
 ## Enumerative Combinatorics Study @SSHS MWT
 
-{% for lec in site.static_files %}
-- {{lec.path}} {{lec.basename}}
-{% endfor %}
-
-{%assign sorted_lecs = site.static_files | sort: "basename"%}
+{%assign sorted_lecs = site.static_files | sort: "path"%}
 
 {%for lec in sorted_lecs%}
 {%if lec.path contains "/pdf/enumcomb"%}
