@@ -7,7 +7,7 @@ permalink: /ec/
 ## Enumerative Combinatorics Study @SSHS MWT
 
 
-{%assign lecs = site.static_files | where: "pdf/enumcomb", true%}
+{%assign lecs = site.static_files | where: "pdf/enumcomb"%}
 
 {%assign sorted_lecs = lecs | sort: file.basename%}
 
