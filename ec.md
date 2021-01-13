@@ -10,7 +10,7 @@ permalink: /ec/
 - {{lec.path}} {{lec.basename}}
 {% endfor %}
 
-{%assign sorted_lecs = site.statice_files | sort: file.basename%}
+{%assign sorted_lecs = site.static_files | sort: file.basename%}
 
 {%for lec in sorted_lecs%}
 {%if lec.path includes "/pdf/enumcomb"%}
