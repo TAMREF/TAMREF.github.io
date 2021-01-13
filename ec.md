@@ -13,7 +13,7 @@ permalink: /ec/
 {%assign sorted_lecs = site.static_files | sort: file.basename%}
 
 {%for lec in sorted_lecs%}
-{%if lec.path includes "/pdf/enumcomb"%}
+{%if lec.path contains "/pdf/enumcomb"%}
 - <a href = "{{ site.baseurl }}{{ lec.path }}">{{lec.basename}}</a>
 {% endif %}
 {% endfor %}
