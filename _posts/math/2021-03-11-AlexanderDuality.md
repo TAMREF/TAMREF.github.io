@@ -31,7 +31,7 @@ $$
 
 Duality라는 이름이 붙은 만큼, 당연히 $$\Delta^{**} = \Delta$$가 성립한다. Matroid Duality와는 전혀 다른 대상인 듯하다.
 
-![image-20210312004006221](C:\Users\SAMSUNG\AppData\Roaming\Typora\typora-user-images\image-20210312004006221.png)
+![image-20210312004006221](https://tamref.github.io/images/alexander.png)
 
 논문의 이미지를 빌린 설명이다. 이 경우 $$S$$의 Facet은 $$\{12, 13, 23, 14\}$$이고, $$S^{*}$$의 facet은 $$\{12, 13\}$$이 된다.
 
