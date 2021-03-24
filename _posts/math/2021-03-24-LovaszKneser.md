@@ -32,24 +32,24 @@ Lemma의 증명 역시 생략한다.
 $$
 x^{+} := \{i \in [n] \mid x_{i} > 0\}, \quad x^{-} := \{i \in [n] \mid x_{i} < 0\}
 $$
-이 때, $V(K’)$의 labeling $\lambda$를 정의하자. 집합들의 total order $\le$를 $\abs{A} < \abs{B}$이면 $A < B$가 성립하고, 크기가 같은 경우에는 아무 tie-breaker (사전순 등)를 주어서 정의한다.
+이 때, $V(K’)$의 labeling $\lambda$를 정의하자. 집합들의 total order $\le$를 $\sz{A} < \sz{B}$이면 $A < B$가 성립하고, 크기가 같은 경우에는 아무 tie-breaker (사전순 등)를 주어서 정의한다.
 
 1. $\sz{x^{+}} + \sz{x^{-}} \le 2k-2$인 경우
    $$
-   \lambda(x) := \begin{cases} \sz{x^{+}} + \sz{x^{-}} + 1 & x^{+} \ge x^{-} \\ -(\abs{x^{+}} + \abs{x^{-}} + 1) & x^{+} < x^{-} \end{cases}
+   \lambda(x) := \begin{cases} \sz{x^{+}} + \sz{x^{-}} + 1 & x^{+} \ge x^{-} \\ -(\sz{x^{+}} + \sz{x^{-}} + 1) & x^{+} < x^{-} \end{cases}
    $$
-   이 경우 $\abs{\lambda(x)} \le 2k - 1$이다.
+   이 경우 $\sz{\lambda(x)} \le 2k - 1$이다.
 
-2. $\abs{x^{+}} + \abs{x^{-}} \ge 2k - 1$인 경우
+2. $\sz{x^{+}} + \sz{x^{-}} \ge 2k - 1$인 경우
    둘 중 (정의한 order $\le$에 따라) 큰 집합 $x^{big}$의 크기가 $k$ 이상임에 주목하자. 이 때 $x^{big}$의 가장 작은 $k$개 원소로 이루어진 집합을 $A$라고 할 때,
    $$
    \lambda(x) := \begin{cases} c(A) & x^{+} > x^{-} \\ -c(A) & x^{+} < x^{-}\end{cases}
    $$
-   로 정의한다. 이 경우 $\abs{\lambda(x)} \ge 2k$이다.
+   로 정의한다. 이 경우 $\sz{\lambda(x)} \ge 2k$이다.
 
 $\lambda(-v) = -\lambda(v)$를 보장하는 것만 중요하기 때문에 tie-breaker를 아무렇게나 주어도 된다. $x^{+} = x^{-}$인 경우는 둘 모두 공집합인 $x = \maf{0}$뿐임을 생각하자. 실제로 Tucker’s lemma가 요구하는 것보다 강한 조건인, 모든 $v \in V(K’)$에 대해 $\lambda(-v) = -\lambda(v)$가 성립한다.
 
 Tucker’s lemma를 적용하면, $\lambda(v) + \lambda(w) = 0$인 $vw \in E(K’)$이 존재한다. $E(K’)$의 구조를 생각해보면, $\maf{0}$이 한 끝점이거나 $L’$의 한 면의 barycentric subdivision에 속한다. 두 경우 모두 $v^{\pm} = (v^{+}, v^{-}), w^{\pm} = (w^{+}, w^{-})$에 inclusion order를 줬을 때 $v^{\pm} < w^{\pm}$ 또는 $v^{\pm} > w^{\pm}$이 성립해야 한다는 사실을 알 수 있다.
 
-1. $\abs{\lambda(v)}, \abs{\lambda(w)} \le 2k - 1$일 수 없다는 것이 이제 자명하다. $v^{\pm} < w^{\pm}$이라고 하면 $\sz{v^{+}} + \sz{v^{-}} < \sz{w^{+}} + \sz{w^{-}}$이기 때문.
-2. 따라서 $\abs{\lambda(v)} \ge 2k$이다. 편의상 $\lambda(v) = -\lambda(w) > 0$이라고 가정하자. 이 경우 $v^{+} \cap w^{-} = \emptyset$이고, 따라서 $c(A) = \lambda(v) = -\lambda(w) = c(B)$를 만족하는 크기 $k$인 두 집합 $A \subseteq v^{+}, B \subseteq w^{-}$는 서로소이다. 즉 $\mar{KG}(n, k)$에서 $A, B$는 같은 색을 갖는 연결된 간선으로, $c$가 coloring임에 모순이다. 증명 끝.
+1. $\sz{\lambda(v)}, \sz{\lambda(w)} \le 2k - 1$일 수 없다는 것이 이제 자명하다. $v^{\pm} < w^{\pm}$이라고 하면 $\sz{v^{+}} + \sz{v^{-}} < \sz{w^{+}} + \sz{w^{-}}$이기 때문.
+2. 따라서 $\sz{\lambda(v)} \ge 2k$이다. 편의상 $\lambda(v) = -\lambda(w) > 0$이라고 가정하자. 이 경우 $v^{+} \cap w^{-} = \emptyset$이고, 따라서 $c(A) = \lambda(v) = -\lambda(w) = c(B)$를 만족하는 크기 $k$인 두 집합 $A \subseteq v^{+}, B \subseteq w^{-}$는 서로소이다. 즉 $\mar{KG}(n, k)$에서 $A, B$는 같은 색을 갖는 연결된 간선으로, $c$가 coloring임에 모순이다. 증명 끝.
