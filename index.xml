@@ -15,8 +15,8 @@
       <guid>https://tamref.github.io/posts/migrated/generalized-laplacian/</guid>
       <description>&lt;p&gt;크기가 $n \times n$인 실대칭행렬 $A = (a _ {ij})$에 대해 $i \neq j \implies a _ {ij} \le 0$을 만족하고, $A$의 모든 고윳값이 음이 아닌 실수이다. (positive-semidefinite) $n \ge 2$라고 할 때, 다음 물음에 답하여라.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;$\ker A = {v \in \mathbb{R}^{n} : v^{t}Av = 0}$&lt;/li&gt;
-&lt;li&gt;$[n] = {1, \cdots, n}$의 nonempty partition $I, J$에 대해, 항상 $a _ {ij} &amp;lt; 0$인 $i \in I$, $j \in J$가 존재한다고 하자. 이 때, $\dim \ker A \le 1$임을 보여라.&lt;/li&gt;
+&lt;li&gt;$\ker A = \set{v \in \mathbb{R}^{n} : v^{t}Av = 0}$&lt;/li&gt;
+&lt;li&gt;$[n] = \set{1, \cdots, n}$의 nonempty partition $I, J$에 대해, 항상 $a _ {ij} &amp;lt; 0$인 $i \in I$, $j \in J$가 존재한다고 하자. 이 때, $\dim \ker A \le 1$임을 보여라.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;본 포스트에서는 이 문제의 풀이와, 이것이 함의하는 바에 대해 논의한다.&lt;/p&gt;</description>
     </item>
@@ -25,7 +25,7 @@
       <link>https://tamref.github.io/posts/migrated/usamo-2014-p3/</link>
       <pubDate>Tue, 26 Dec 2023 17:16:09 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/usamo-2014-p3/</guid>
-      <description>&lt;p&gt;평면 위에 다음을 만족하는 점열 ${P_n}_{n \in \mathbb{Z}}$이 존재함을 보여라:&lt;/p&gt;
+      <description>&lt;p&gt;평면 위에 다음을 만족하는 점열 $\set{P_n}_{n \in \mathbb{Z}}$이 존재함을 보여라:&lt;/p&gt;
 &lt;p&gt;“$P_{a}, P_{b}, P_{c}$가 공선점인 것은 $a + b + c = 2014$와 동치이다.”&lt;/p&gt;</description>
     </item>
     <item>
@@ -44,7 +44,7 @@ $$
       <link>https://tamref.github.io/posts/migrated/lovasz-kneser/</link>
       <pubDate>Tue, 26 Dec 2023 17:15:33 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/lovasz-kneser/</guid>
-      <description>&lt;p&gt;$[n] = {1, \cdots, n}$과 $2 \le 2k \le n$에 대해, Kneser graph $\mar{KG}(n, k)$는 $\binom{[n]}{k}$를 정점 집합으로 하고, $S \cap S&amp;rsquo; = \emptyset$인 모든 $S, S&amp;rsquo;$에 대해 간선을 이어준 그래프로 정의된다. Lovasz-Kneser Theorem (Kneser&amp;rsquo;s conjecture)란 이 그래프의 chromatic number $\chi(\mar{KG}(n, k)) \ge n - 2k + 2$가 성립한다는 정리이다. 이 글에서는 Tucker&amp;rsquo;s lemma를 이용한 J. Matousek의 증명을 소개한다.&lt;/p&gt;</description>
+      <description>&lt;p&gt;$[n] = \set{1, \cdots, n}$과 $2 \le 2k \le n$에 대해, Kneser graph $\mar{KG}(n, k)$는 $\binom{[n]}{k}$를 정점 집합으로 하고, $S \cap S&amp;rsquo; = \emptyset$인 모든 $S, S&amp;rsquo;$에 대해 간선을 이어준 그래프로 정의된다. Lovasz-Kneser Theorem (Kneser&amp;rsquo;s conjecture)란 이 그래프의 chromatic number $\chi(\mar{KG}(n, k)) \ge n - 2k + 2$가 성립한다는 정리이다. 이 글에서는 Tucker&amp;rsquo;s lemma를 이용한 J. Matousek의 증명을 소개한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alexander Duality</title>
@@ -92,12 +92,9 @@ $$
       <link>https://tamref.github.io/posts/migrated/vector-space-sum/</link>
       <pubDate>Tue, 26 Dec 2023 17:12:50 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/vector-space-sum/</guid>
-      <description>&lt;p&gt;$$\newcommand{\abs}[1]{\lvert #1 \rvert}$$&lt;/p&gt;
-&lt;p&gt;Vector space $$W$$의 subspace $$U,V$$에 대해 다음의 결과는 잘 알려져 있다.
-$$
-\dim (U + V) = \dim U + \dim V - \dim (U \cap V)
-$$
-오늘은 이 결과를 증명하고, 이 정리의 확장과 관련된 유명한 반례를 소개한다.&lt;/p&gt;</description>
+      <description>$$\newcommand{\abs}[1]{\lvert #1 \rvert}$$
+Vector space $W$의 subspace $U,V$에 대해 다음의 결과는 잘 알려져 있다. $$ \dim (U + V) = \dim U + \dim V - \dim (U \cap V) $$ 오늘은 이 결과를 증명하고, 이 정리의 확장과 관련된 유명한 반례를 소개한다.
+단, $U + V = \set{u + v : u \in U, v \in V}$로 정의한다. $U, V \le W$에 대해 $U \cap V, U + V \le W$는 자명.</description>
     </item>
     <item>
       <title>SEEMOUS 2019</title>
@@ -105,14 +102,14 @@ $$
       <pubDate>Tue, 26 Dec 2023 17:12:27 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/seemous-2019/</guid>
       <description>SEEMOUS 2019를 풀어보았다. 몇몇 문제는 풀이를 검증하기 위한 배경 지식이 부족해서 나중에 자세히 다루기로 한다.
-P1 $$[0,1]$$의 값을 갖는 무한 실수열 $${x_{n}}$$이 다음 조건을 만족하면 $${x_{n}}$$을 Devin sequence라고 한다.
+P1 $$[0,1]$$의 값을 갖는 무한 실수열 $$\set{x_{n}}$$이 다음 조건을 만족하면 $$\set{x_{n}}$$을 Devin sequence라고 한다.
 $$ \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}f(x_{i}) = \int_{0}^{1} f(x)dx $$
-이 때, $${x_{n}}$$이 Devin sequence가 될 필요충분조건은
+이 때, $$\set{x_{n}}$$이 Devin sequence가 될 필요충분조건은
 $$ \forall k \ge 0 \quad \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} = \frac{1}{k+1} $$
 인 것임을 보여라.
 Solution sketch $$\implies$$는 자명.
 $$\impliedby$$는 Weierstrass.
-P2 $$A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}{n,n}(\mathbb{R})$$에 대하여 다음을 만족하는 $${\varepsilon{i}} \in {-1,1}^{m}$$이 존재함을 보여라.</description>
+P2 $$A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}{n,n}(\mathbb{R})$$에 대하여 다음을 만족하는 $$\set{\varepsilon{i}} \in \set{-1,1}^{m}$$이 존재함을 보여라.</description>
     </item>
     <item>
       <title>Cayley Thm</title>
@@ -121,7 +118,7 @@ P2 $$A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}{n,n}(\mathbb{R})$$에 대하�
       <guid>https://tamref.github.io/posts/migrated/cayley-thm/</guid>
       <description>조합론에서의 Cayley&amp;rsquo;s theorem은 완전그래프 $$K_{n}$$의 서로 다른 spanning tree가 $$n^{n-2}$$개라는 정리이다. 일반적으로는 그 쓰임보다도 아름다운 증명에 가치를 둔다. Functional graph를 알고 있다는 전제 하에 글을 작성했다.
 Reference : Miklos Bona - [A Walk through Combinatorics]
-cf : $$[n] := {1,\dots,n}.$$
+cf : $$[n] := \set{1,\dots,n}.$$
 Proof of the theorem (By A. Joyal) $$K_{n}$$의 spanning tree의 개수를 $$t_{n}$$이라고 두고, $$n^{2}t_{n} = n^{n}$$임을 보인다.
 Definition. 정점 $$n \ge 1$$개의 트리 $$T$$에서 정점 $$a, b$$를 골라 $$a$$를 start, $$b$$를 end로 부르자.</description>
     </item>
@@ -209,7 +206,7 @@ Idea 1. 2-SAT Segment Tree 편의상 $$x$$좌표들을 정렬된 순서대로 $$
       <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
       <pubDate>Tue, 26 Dec 2023 16:49:34 +0900</pubDate>
       <guid>https://tamref.github.io/posts/min-knapsack-2-approx/</guid>
-      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v_{i}$ and cost $c_{i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\ \text{s.t.}\quad&amp;amp; \sum_{i} v_{i}x_{i} \ge D\ &amp;amp; x_{i} \in {0, 1} \end{aligned} $$ where $D$ is given desire on value.
+      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v_{i}$ and cost $c_{i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\ \text{s.t.}\quad&amp;amp; \sum_{i} v_{i}x_{i} \ge D\ &amp;amp; x_{i} \in \set{0, 1} \end{aligned} $$ where $D$ is given desire on value.
 We can devise a naive LP relaxation for this: $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\ \text{s.t.}\quad&amp;amp; \sum_{i} v_{i}x_{i} \ge D\ &amp;amp; x_{i} \in [0, 1] \end{aligned} $$ while this can be as bad as $D$ in terms of approximation ratio.</description>
     </item>
   </channel>
