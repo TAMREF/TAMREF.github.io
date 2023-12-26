@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linear-algebra on TAMREF&#39;s blog</title>
+    <link>https://tamref.github.io/tags/linear-algebra/</link>
+    <description>Recent content in linear-algebra on TAMREF&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://tamref.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vector Space Sum</title>
+      <link>https://tamref.github.io/posts/migrated/vector-space-sum/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/vector-space-sum/</guid>
+      <description>$\newcommand{\abs}[1]{\lvert #1 \rvert}$
+Vector space $W$의 subspace $U,V$에 대해 다음의 결과는 잘 알려져 있다. $ \dim (U + V) = \dim U + \dim V - \dim (U \cap V) $ 오늘은 이 결과를 증명하고, 이 정리의 확장과 관련된 유명한 반례를 소개한다.
+단, $U + V = \set{u + v : u \in U, v \in V}$로 정의한다. $U, V \le W$에 대해 $U \cap V, U + V \le W$는 자명.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on TAMREF&#39;s blog</title>
+    <link>https://tamref.github.io/categories/algorithm/</link>
+    <description>Recent content in algorithm on TAMREF&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Dec 2023 20:00:00 +0900</lastBuildDate>
+    <atom:link href="https://tamref.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2-Approximating the Minimum Knapsack Problem</title>
+      <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
+      <pubDate>Tue, 26 Dec 2023 20:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/min-knapsack-2-approx/</guid>
+      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v_{i}$ and cost $c_{i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i} \\ \text{s.t.}\quad&amp;amp; \sum_{i} v_{i}x_{i} \ge D \\ &amp;amp; x_{i} \in \set{0, 1} \end{aligned} $$ where $D$ is given desire on value.
+We can devise a naive LP relaxation for this: $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\\ \text{s.</description>
+    </item>
+    <item>
+      <title>Arc069 F</title>
+      <link>https://tamref.github.io/posts/migrated/arc069-f/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/arc069-f/</guid>
+      <description>수직선상에 깃발 $N$개를 놓되, $i$번째 깃발은 $x_i$ 또는 $y_i$에 놓아야 한다. 이 때 깃발들 사이의 최소 거리의 최댓값을 구하는 문제이다. 문제 링크
+Solution sketch 일단 파라메트릭 + 2-SAT을 해야 한다는 것 까지는 자명한 관찰이다. 즉, “가장 가까이 있는 깃발이 $d$ 이상 떨어져 있게 할 수 있는가?”에 관한 문제를 풀자. 그런데 2-SAT에 사용할 그래프 에지를 단순하게 만들면 $O(N^2)$개가 된다.
+Idea 1. 2-SAT Segment Tree 편의상 $x$좌표들을 정렬된 순서대로 $p_{1}, p_{2}, \cdots, $라 두자.</description>
+    </item>
+    <item>
+      <title>Grundy Number 1</title>
+      <link>https://tamref.github.io/posts/migrated/grundy-number-1/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/grundy-number-1/</guid>
+      <description>Grundy Number는 PS에서 굉장히 자주 쓰이는 데 비해 그 증명이나 수학적 배경이 잘 알려져 있지 않다. 앞으로 일련의 포스팅에서는 Sprague-Grundy Theorem에 대해 공부한 것을 PS 스타일로 정리하려 한다. 그 중에서 이 글은 Grundy Number의 정의와 Sprague-Grundy theorem의 증명에 대해 다룬다.
+Nim-Game의 필승 전략에 대한 사전 지식이 필요하며, 문제풀이에 최적화된 글이기 때문에 statement가 실제 theorem의 내용과는 다소 차이가 있다.
+References sirkingnightingfail, “A Blog on Sprague-Grundy Theorem”
+Wikipedia: Sprague-Grundy theorem
+Definition of Game “게임”은 상당히 광범위한 용어이지만, Sprague-Grundy theorem의 영향 아래 있는 “Game”은 다음의 조건을 만족하는 일종의 state collection을 말한다.</description>
+    </item>
+    <item>
+      <title>Ps-20200811</title>
+      <link>https://tamref.github.io/posts/migrated/ps_20200811/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/ps_20200811/</guid>
+      <description>rkm0959, jhhope1이랑 진행한 문제풀이의 간략한 풀이. 스포일러에 주의하자.
+BOJ 15313. 정과프 해적단 $[l, r]$ 값이 없는 문제는 좌표압축 + 세그먼트 트리를 이용한 dp로 $O(n\log n)$에 해결할 수 있다. 이 때 $l$이 증가할수록 조건을 만족하기 위해 필요한 최소의 $r$도 증가하므로 inchworm을 얹어주면 $O(n^{2}\log n)$이 된다.
+BOJ 15504. 프로그래밍 대결 제일 실력이 높은 선수를 제외하고, 각 선수마다 &amp;lsquo;자신을 이기는 선수&amp;rsquo;를 정해주면 스패닝 트리가 유일하게 결정된다. 해당 작업을 mcmf로 모델링하면 $O(n^{4})$. 늘 그렇듯 플로우 문제에서 시간복잡도는 아무 의미 없다.</description>
+    </item>
+    <item>
+      <title>Ps-20220716</title>
+      <link>https://tamref.github.io/posts/migrated/ps_20220716/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/ps_20220716/</guid>
+      <description>교육용으로 사용한 10문제의 풀이입니다. 용어가 원본 문제와 다를 수 있습니다.
+BAPC 2021 F. &amp;ldquo;Fair Play&amp;rdquo; $n$이 홀수인 경우는 당연히 불가능하고, 짝수인 경우 $(b, p)$를 std::pair 와 같은 방식으로 정렬한 것을 $(b_{1}, p_{1}), \cdots, (b_{n}, p_{n})$이라고 둡시다. 이 때 유일하게 가능한 매칭 방법은 $(b_{1}, p_{1})$을 $(b_{n}, p_{n})$과, $(b_{2}, p_{2})$를 $(b_{n-1}, p_{n-1})$과 &amp;hellip; 매칭해주는 것입니다. 이렇게 해서 벡터합이 모두 균일하다면 possible, 그렇지 않다면 impossible 입니다.
+BAPC 2021 I &amp;ldquo;Implementation Irregularities&amp;rdquo; $s_{i}$가 증가하는 순서대로 원소들을 배열하고, $s_{i} = -1$인 원소들을 제외합시다.</description>
+    </item>
+    <item>
+      <title>Swerc2019 H</title>
+      <link>https://tamref.github.io/posts/migrated/swerc2019-h/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/swerc2019-h/</guid>
+      <description>&lt;p&gt;SWERC 2019 H번 문제이다. &lt;a href=&#34;https://www.acmicpc.net/problem/18300&#34;&gt;BOJ 18300번&lt;/a&gt;이기도 하다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Swerc2019 J</title>
+      <link>https://tamref.github.io/posts/migrated/swerc2019-j/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/swerc2019-j/</guid>
+      <description>&lt;p&gt;SWERC 2019 J번 문제이다. &lt;a href=&#34;https://www.acmicpc.net/problem/18302&#34;&gt;BOJ 18302&lt;/a&gt;번이기도 하다.&lt;/p&gt;
+&lt;p&gt;대회 중에는 rkm0959가 풀었다. 너무 긴 본문이 읽기 싫어서 알큼이 요약해준 문제 설명대로만 코드를 짰다가 중요한 디테일을 누락시켜서 엄청 고생했다…&lt;/p&gt;
+&lt;p&gt;간단히 말해서, inorder traversal (LDR 순회)이 주어진 수열이 나올 수 있는 binary tree의 개수를 구하는 문제이다. 단, 이 tree는 min-heap의 조건 (자식 $\ge$ 부모)를 만족해야 한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Swerc2019 K</title>
+      <link>https://tamref.github.io/posts/migrated/swerc2019-k/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/swerc2019-k/</guid>
+      <description>&lt;p&gt;SWERC 2019 K번 문제이다. &lt;a href=&#34;https://www.acmicpc.net/problem/18303&#34;&gt;BOJ 18303&lt;/a&gt;번이기도 하다.&lt;/p&gt;
+&lt;p&gt;rkm0959한테 문제 요약만 들어서 본문을 잘 모른다(…)&lt;/p&gt;
+&lt;p&gt;Unweighted Directed graph에서 어떤 고정된 정점 $T$에 대해 $u \to T$ 간선이 있고, 이 간선을 사용하지 않으면 $u$에서 $T$로 이동할 수 없는 정점 $u$를 모두 구하는 문제이다. 정점 개수와 간선 개수는 $10^{5}$개 이하.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

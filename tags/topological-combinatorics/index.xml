@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>topological-combinatorics on TAMREF&#39;s blog</title>
+    <link>https://tamref.github.io/tags/topological-combinatorics/</link>
+    <description>Recent content in topological-combinatorics on TAMREF&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://tamref.github.io/tags/topological-combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dolnikov</title>
+      <link>https://tamref.github.io/posts/migrated/dolnikov/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/dolnikov/</guid>
+      <description>Dol’nikov theorem이란 일반화된 Kneser graph의 chromatic number에 대한 정리이다. statement만 빌려 쓰면, 적절한 유한집합 $[n]$과 $F \subseteq 2^{[n]}$에 대해 다음이 성립한다: $ \chi(\mar{KG}(F)) \ge \mar{cd}_{2}(F) $ 이 글에서는 Borsuk-Ulam theorem을 이용하여 이를 증명한다.
+Problem analysis Lovasz-Kneser theorem에서 다루었던 Kneser graph의 coloring 문제를 일반화해보자.
+적당한 ground set $[n]$이 있다. 이 $n$의 값은 오늘 전혀 중요하지 않다. $F \subseteq 2^{[n]}$이 그래프의 정점 집합이 된다. 색은 이 정점 위에 칠할 것이다. $A, B \in F$에 대해 $A \cap B = \emptyset$이면 $A, B$ 사이에 간선을 잇는다.</description>
+    </item>
+    <item>
+      <title>Lovasz Kneser</title>
+      <link>https://tamref.github.io/posts/migrated/lovasz-kneser/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/lovasz-kneser/</guid>
+      <description>&lt;p&gt;$[n] = \set{1, \cdots, n}$과 $2 \le 2k \le n$에 대해, Kneser graph $\mar{KG}(n, k)$는 $\binom{[n]}{k}$를 정점 집합으로 하고, $S \cap S&amp;rsquo; = \emptyset$인 모든 $S, S&amp;rsquo;$에 대해 간선을 이어준 그래프로 정의된다. Lovasz-Kneser Theorem (Kneser&amp;rsquo;s conjecture)란 이 그래프의 chromatic number $\chi(\mar{KG}(n, k)) \ge n - 2k + 2$가 성립한다는 정리이다. 이 글에서는 Tucker&amp;rsquo;s lemma를 이용한 J. Matousek의 증명을 소개한다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

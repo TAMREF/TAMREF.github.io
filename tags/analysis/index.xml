@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analysis on TAMREF&#39;s blog</title>
+    <link>https://tamref.github.io/tags/analysis/</link>
+    <description>Recent content in analysis on TAMREF&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://tamref.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arzela Ascoli</title>
+      <link>https://tamref.github.io/posts/migrated/arzela-ascoli/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/arzela-ascoli/</guid>
+      <description>&lt;p&gt;Arzela-Ascoli theorem을 따로 알아야 할 상황이 생겨서, 해석개론에서 약간의 지름길을 타서 이 정리를 건드려보기로 했다.&lt;/p&gt;
+&lt;p&gt;Compactness에 대한 통찰을 요구한다.&lt;/p&gt;
+&lt;p&gt;Ref: 김성기, 김도한, 계승혁 - 해석개론&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Non Existence of C1 Space Filling Curve</title>
+      <link>https://tamref.github.io/posts/migrated/non-existence-of-c1-space-filling-curve/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/non-existence-of-c1-space-filling-curve/</guid>
+      <description>&lt;p&gt;Space-filling curve는 일반적으로 $I := [0,1]$에서 $I \times I$로 가는 continuous onto function을 말한다. Hilbert’s curve, Sierpinski’s curve 등 여러 가지가 알려져 있다. 이런 curve들의 특징은 uniformly converge하는 연속함수열의 극한으로 정의된다는 점인데, 그렇지 않고는 Space Filling Curve를 만들기 굉장히 어렵기 때문이다. 이 포스팅에서는 $C^{1}$ class의 space-filling curve가 존재하지 않음을 보인다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

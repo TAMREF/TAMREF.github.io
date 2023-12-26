@@ -6,6 +6,77 @@
     <description>Recent content in Tags on TAMREF&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 26 Dec 2023 20:00:00 +0900</lastBuildDate>
     <atom:link href="https://tamref.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>approximation-algorithm</title>
+      <link>https://tamref.github.io/tags/approximation-algorithm/</link>
+      <pubDate>Tue, 26 Dec 2023 20:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/approximation-algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>linear-programming</title>
+      <link>https://tamref.github.io/tags/linear-programming/</link>
+      <pubDate>Tue, 26 Dec 2023 20:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/linear-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>analysis</title>
+      <link>https://tamref.github.io/tags/analysis/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>combinatorics</title>
+      <link>https://tamref.github.io/tags/combinatorics/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/combinatorics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>competitive-math</title>
+      <link>https://tamref.github.io/tags/competitive-math/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/competitive-math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>complex-analysis</title>
+      <link>https://tamref.github.io/tags/complex-analysis/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/complex-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>legacy</title>
+      <link>https://tamref.github.io/tags/legacy/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/legacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>linear-algebra</title>
+      <link>https://tamref.github.io/tags/linear-algebra/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/linear-algebra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ps</title>
+      <link>https://tamref.github.io/tags/ps/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/ps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>topological-combinatorics</title>
+      <link>https://tamref.github.io/tags/topological-combinatorics/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/tags/topological-combinatorics/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

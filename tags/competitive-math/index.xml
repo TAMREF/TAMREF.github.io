@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>competitive-math on TAMREF&#39;s blog</title>
+    <link>https://tamref.github.io/tags/competitive-math/</link>
+    <description>Recent content in competitive-math on TAMREF&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://tamref.github.io/tags/competitive-math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generalized Laplacian</title>
+      <link>https://tamref.github.io/posts/migrated/generalized-laplacian/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/generalized-laplacian/</guid>
+      <description>&lt;p&gt;크기가 $n \times n$인 실대칭행렬 $A = (a_{ij})$에 대해 $i \neq j \implies a_{ij} \le 0$을 만족하고, $A$의 모든 고윳값이 음이 아닌 실수이다. (positive-semidefinite) $n \ge 2$라고 할 때, 다음 물음에 답하여라.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\ker A = \set{v \in \mathbb{R}^{n} : v^{t}Av = 0}$&lt;/li&gt;
+&lt;li&gt;$[n] = \set{1, \cdots, n}$의 nonempty partition $I, J$에 대해, 항상 $a_{ij} &amp;lt; 0$인 $i \in I$, $j \in J$가 존재한다고 하자. 이 때, $\dim \ker A \le 1$임을 보여라.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;본 포스트에서는 이 문제의 풀이와, 이것이 함의하는 바에 대해 논의한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SEEMOUS 2019</title>
+      <link>https://tamref.github.io/posts/migrated/seemous-2019/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/seemous-2019/</guid>
+      <description>SEEMOUS 2019를 풀어보았다. 몇몇 문제는 풀이를 검증하기 위한 배경 지식이 부족해서 나중에 자세히 다루기로 한다.
+P1 $[0,1]$의 값을 갖는 무한 실수열 $\set{x_{n}}$이 다음 조건을 만족하면 $\set{x_{n}}$을 Devin sequence라고 한다.
+$ \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}f(x_{i}) = \int_{0}^{1} f(x)dx $
+이 때, $\set{x_{n}}$이 Devin sequence가 될 필요충분조건은
+$ \forall k \ge 0 \quad \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} = \frac{1}{k+1} $
+인 것임을 보여라.
+Solution sketch $\implies$는 자명.
+$\impliedby$는 Weierstrass.
+P2 $A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}_{n,n}(\mathbb{R})$에 대하여 다음을 만족하는 $\set{\varepsilon_{i}} \in \set{-1,1}^{m}$이 존재함을 보여라.</description>
+    </item>
+    <item>
+      <title>Usamo 2014 P3</title>
+      <link>https://tamref.github.io/posts/migrated/usamo-2014-p3/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/migrated/usamo-2014-p3/</guid>
+      <description>&lt;p&gt;평면 위에 다음을 만족하는 점열 $\set{P_n}_{n \in \mathbb{Z}}$이 존재함을 보여라:&lt;/p&gt;
+&lt;p&gt;“$P_{a}, P_{b}, P_{c}$가 공선점인 것은 $a + b + c = 2014$와 동치이다.”&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
