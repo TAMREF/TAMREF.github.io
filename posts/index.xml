@@ -6,8 +6,15 @@
     <description>Recent content in Posts on TAMREF&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Dec 2023 17:16:27 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2023 20:00:00 +0900</lastBuildDate>
     <atom:link href="https://tamref.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2-Approximating the Minimum Knapsack Problem</title>
+      <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
+      <pubDate>Tue, 26 Dec 2023 20:00:00 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/min-knapsack-2-approx/</guid>
+      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v _ {i}$ and cost $c _ {i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum _ {i} c _ {i}x _ {i} \\ \text{s.t.}\quad&amp;amp; \sum _ {i} v _ {i}x _ {i} \ge D \\ &amp;amp; x _ {i} \in \set{0, 1} \end{aligned} $$ where $D$ is given desire on value.</description>
+    </item>
     <item>
       <title>Generalized Laplacian</title>
       <link>https://tamref.github.io/posts/migrated/generalized-laplacian/</link>
@@ -61,7 +68,9 @@ Alexander Dual Vertex set $V$ 위에 정의된 Simplicial Complex $\Delta$ 에 �
       <link>https://tamref.github.io/posts/migrated/schwarz-lemma/</link>
       <pubDate>Tue, 26 Dec 2023 17:14:55 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/schwarz-lemma/</guid>
-      <description>&lt;p&gt;$\mathbb{C}$의 open unit disk $\mathbb{D}$에 대해, holomorphic function $f : \mathbb{D} \to \mathbb{D}$를 생각하자. Schwarz Lemma는 이러한 $f$의 성질에 대한 Lemma이고, 이는 $\mathbb{D}$의 Automorphism group을 characterize하는 데 큰 도움을 준다.&lt;/p&gt;</description>
+      <description>$\mathbb{C}$의 open unit disk $\mathbb{D}$에 대해, holomorphic function $f : \mathbb{D} \to \mathbb{D}$를 생각하자. Schwarz Lemma는 이러한 $f$의 성질에 대한 Lemma이고, 이는 $\mathbb{D}$의 Automorphism group을 characterize하는 데 큰 도움을 준다.
+Lemma (Schwarz) $f : \mb{D} \to \mb{D}$가 holomorphic이고, $f(0) = 0$을 만족한다고 하자. 다음 세 성질이 성립한다.
+$\abs{f(z)} \le \abs{z}$. 만약 $z _ 0 \neq 0$에 대해 $\abs{f(z _ 0)} = \abs{z _ 0}$가 성립한다면, $f$는 rotation. $\abs{f’(0)} \le 1$. 등호가 성립한다면 $f$는 rotation.</description>
     </item>
     <item>
       <title>Non Existence of C1 Space Filling Curve</title>
@@ -122,18 +131,13 @@ Definition. 정점 $n \ge 1$개의 트리 $T$에서 정점 $a, b$를 골라 $a$�
       <link>https://tamref.github.io/posts/migrated/riemann-mapping/</link>
       <pubDate>Tue, 26 Dec 2023 17:11:15 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/riemann-mapping/</guid>
-      <description>&lt;p&gt;Riemann Mapping은 $\mathbb{C}$의 모든 simply connected proper subset $\Omega$에 대해, Conformal map $f : \mathbb{D} \to \Omega$가 존재한다는 매우 강력한 정리이다. 여기서는 짧고 아름다운 nonconstructive한 증명을 다룬다.&lt;/p&gt;
-&lt;p&gt;Ref: Stein &amp;amp; Shakarchi, Complex Analysis Ch.8&lt;/p&gt;</description>
+      <description>Riemann Mapping은 $\mathbb{C}$의 모든 simply connected proper subset $\Omega$에 대해, Conformal map $f : \mathbb{D} \to \Omega$가 존재한다는 매우 강력한 정리이다. 여기서는 짧고 아름다운 nonconstructive한 증명을 다룬다.
+Ref: Stein &amp;amp; Shakarchi, Complex Analysis Ch.8
+Montel’s theorem 어떤 함수열 $\ev{f _ n}$이 수렴하는 부분수열 $\ev{f _ {n(k)}}$를 갖는다는 사실은 매우 유용하다. 물론 여기서 수렴은 모든 cpt subset에 대한 uniform convergence를 의미한다.
+Arzela-Ascoli Theorem의 경우, 정의역이 cpt set인 연속함수들의 함수족 $\mc{F}$가 uniformly bdd, equicontinuous면 위 성질을 만족한다는 것을 보장하고 있다.</description>
     </item>
     <item>
-      <title>Riemann _ mapping</title>
-      <link>https://tamref.github.io/posts/migrated/riemann_mapping/</link>
-      <pubDate>Tue, 26 Dec 2023 17:11:07 +0900</pubDate>
-      <guid>https://tamref.github.io/posts/migrated/riemann_mapping/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ps _ 20200811</title>
+      <title>Ps-20200811</title>
       <link>https://tamref.github.io/posts/migrated/ps_20200811/</link>
       <pubDate>Tue, 26 Dec 2023 17:03:16 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/ps_20200811/</guid>
@@ -142,7 +146,7 @@ BOJ 15313. 정과프 해적단 $[l, r]$ 값이 없는 문제는 좌표압축 + �
 BOJ 15504. 프로그래밍 대결 제일 실력이 높은 선수를 제외하고, 각 선수마다 &amp;lsquo;자신을 이기는 선수&amp;rsquo;를 정해주면 스패닝 트리가 유일하게 결정된다. 해당 작업을 mcmf로 모델링하면 $O(n^{4})$. 늘 그렇듯 플로우 문제에서 시간복잡도는 아무 의미 없다.</description>
     </item>
     <item>
-      <title>Ps _ 20220716</title>
+      <title>Ps-20220716</title>
       <link>https://tamref.github.io/posts/migrated/ps_20220716/</link>
       <pubDate>Tue, 26 Dec 2023 17:02:49 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/ps_20220716/</guid>
@@ -157,7 +161,8 @@ BAPC 2021 F. &amp;ldquo;Fair Play&amp;rdquo; $n$이 홀수인 경우는 당연�
       <description>Grundy Number는 PS에서 굉장히 자주 쓰이는 데 비해 그 증명이나 수학적 배경이 잘 알려져 있지 않다. 앞으로 일련의 포스팅에서는 Sprague-Grundy Theorem에 대해 공부한 것을 PS 스타일로 정리하려 한다. 그 중에서 이 글은 Grundy Number의 정의와 Sprague-Grundy theorem의 증명에 대해 다룬다.
 Nim-Game의 필승 전략에 대한 사전 지식이 필요하며, 문제풀이에 최적화된 글이기 때문에 statement가 실제 theorem의 내용과는 다소 차이가 있다.
 References sirkingnightingfail, “A Blog on Sprague-Grundy Theorem”
-[Wikipedia: Sprague-Grundy _ theorem](https://en.wikipedia.org/wiki/Sprague–Grundy _ theorem)</description>
+Wikipedia: Sprague-Grundy theorem
+Definition of Game “게임”은 상당히 광범위한 용어이지만, Sprague-Grundy theorem의 영향 아래 있는 “Game”은 다음의 조건을 만족하는 일종의 state collection을 말한다.</description>
     </item>
     <item>
       <title>Arc069 F</title>
@@ -192,13 +197,6 @@ Idea 1. 2-SAT Segment Tree 편의상 $x$좌표들을 정렬된 순서대로 $p _
       <pubDate>Tue, 26 Dec 2023 16:58:21 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/swerc2019-h/</guid>
       <description>&lt;p&gt;SWERC 2019 H번 문제이다. &lt;a href=&#34;https://www.acmicpc.net/problem/18300&#34;&gt;BOJ 18300번&lt;/a&gt;이기도 하다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2-Approximating the Minimum Knapsack Problem</title>
-      <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
-      <pubDate>Tue, 26 Dec 2023 16:49:34 +0900</pubDate>
-      <guid>https://tamref.github.io/posts/min-knapsack-2-approx/</guid>
-      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v _ {i}$ and cost $c _ {i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $ \begin{aligned} \text{minimize}\quad&amp;amp; \sum _ {i} c _ {i}x _ {i}\ \text{s.t.}\quad&amp;amp; \sum _ {i} v _ {i}x _ {i} \ge D\ &amp;amp; x _ {i} \in \set{0, 1} \end{aligned} $ where $D$ is given desire on value.</description>
     </item>
   </channel>
 </rss>
