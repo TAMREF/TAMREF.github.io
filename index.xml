@@ -60,11 +60,9 @@ Definition. 정점 $n \ge 1$개의 트리 $T$에서 정점 $a, b$를 골라 $a$�
       <link>https://tamref.github.io/posts/migrated/dolnikov/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/dolnikov/</guid>
-      <description>&lt;p&gt;Dol’nikov theorem이란 일반화된 Kneser graph의 chromatic number에 대한 정리이다. statement만 빌려 쓰면, 적절한 유한집합 $[n]$과 $F \subseteq 2^{[n]}$에 대해 다음이 성립한다:
-$
-\chi(\mar{KG}(F)) \ge \mar{cd}_{2}(F)
-$
-이 글에서는 Borsuk-Ulam theorem을 이용하여 이를 증명한다.&lt;/p&gt;</description>
+      <description>Dol’nikov theorem이란 일반화된 Kneser graph의 chromatic number에 대한 정리이다. statement만 빌려 쓰면, 적절한 유한집합 $[n]$과 $F \subseteq 2^{[n]}$에 대해 다음이 성립한다: $ \chi(\mar{KG}(F)) \ge \mar{cd}_{2}(F) $ 이 글에서는 Borsuk-Ulam theorem을 이용하여 이를 증명한다.
+Problem analysis Lovasz-Kneser theorem에서 다루었던 Kneser graph의 coloring 문제를 일반화해보자.
+적당한 ground set $[n]$이 있다. 이 $n$의 값은 오늘 전혀 중요하지 않다. $F \subseteq 2^{[n]}$이 그래프의 정점 집합이 된다. 색은 이 정점 위에 칠할 것이다. $A, B \in F$에 대해 $A \cap B = \emptyset$이면 $A, B$ 사이에 간선을 잇는다.</description>
     </item>
     <item>
       <title>Generalized Laplacian</title>
