@@ -13,17 +13,18 @@
       <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
       <pubDate>Tue, 26 Dec 2023 20:00:00 +0900</pubDate>
       <guid>https://tamref.github.io/posts/min-knapsack-2-approx/</guid>
-      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v _ {i}$ and cost $c _ {i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum _ {i} c _ {i}x _ {i} \\ \text{s.t.}\quad&amp;amp; \sum _ {i} v _ {i}x _ {i} \ge D \\ &amp;amp; x _ {i} \in \set{0, 1} \end{aligned} $$ where $D$ is given desire on value.</description>
+      <description>Intro Definition. Given $n$ items labeled by $[n]$, and item $i$ has value $v_{i}$ and cost $c_{i}$, we define minimum knapsack problem as following optimization problem - integer programming in fact. $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i} \\ \text{s.t.}\quad&amp;amp; \sum_{i} v_{i}x_{i} \ge D \\ &amp;amp; x_{i} \in \set{0, 1} \end{aligned} $$ where $D$ is given desire on value.
+We can devise a naive LP relaxation for this: $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\\ \text{s.</description>
     </item>
     <item>
       <title>Generalized Laplacian</title>
       <link>https://tamref.github.io/posts/migrated/generalized-laplacian/</link>
       <pubDate>Tue, 26 Dec 2023 17:16:27 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/generalized-laplacian/</guid>
-      <description>&lt;p&gt;크기가 $n \times n$인 실대칭행렬 $A = (a _ {ij})$에 대해 $i \neq j \implies a _ {ij} \le 0$을 만족하고, $A$의 모든 고윳값이 음이 아닌 실수이다. (positive-semidefinite) $n \ge 2$라고 할 때, 다음 물음에 답하여라.&lt;/p&gt;
+      <description>&lt;p&gt;크기가 $n \times n$인 실대칭행렬 $A = (a_{ij})$에 대해 $i \neq j \implies a_{ij} \le 0$을 만족하고, $A$의 모든 고윳값이 음이 아닌 실수이다. (positive-semidefinite) $n \ge 2$라고 할 때, 다음 물음에 답하여라.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$\ker A = \set{v \in \mathbb{R}^{n} : v^{t}Av = 0}$&lt;/li&gt;
-&lt;li&gt;$[n] = \set{1, \cdots, n}$의 nonempty partition $I, J$에 대해, 항상 $a _ {ij} &amp;lt; 0$인 $i \in I$, $j \in J$가 존재한다고 하자. 이 때, $\dim \ker A \le 1$임을 보여라.&lt;/li&gt;
+&lt;li&gt;$[n] = \set{1, \cdots, n}$의 nonempty partition $I, J$에 대해, 항상 $a_{ij} &amp;lt; 0$인 $i \in I$, $j \in J$가 존재한다고 하자. 이 때, $\dim \ker A \le 1$임을 보여라.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;본 포스트에서는 이 문제의 풀이와, 이것이 함의하는 바에 대해 논의한다.&lt;/p&gt;</description>
     </item>
@@ -32,8 +33,8 @@
       <link>https://tamref.github.io/posts/migrated/usamo-2014-p3/</link>
       <pubDate>Tue, 26 Dec 2023 17:16:09 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/usamo-2014-p3/</guid>
-      <description>&lt;p&gt;평면 위에 다음을 만족하는 점열 $\set{P _ n} _ {n \in \mathbb{Z}}$이 존재함을 보여라:&lt;/p&gt;
-&lt;p&gt;“$P _ {a}, P _ {b}, P _ {c}$가 공선점인 것은 $a + b + c = 2014$와 동치이다.”&lt;/p&gt;</description>
+      <description>&lt;p&gt;평면 위에 다음을 만족하는 점열 $\set{P_n}_{n \in \mathbb{Z}}$이 존재함을 보여라:&lt;/p&gt;
+&lt;p&gt;“$P_{a}, P_{b}, P_{c}$가 공선점인 것은 $a + b + c = 2014$와 동치이다.”&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dolnikov</title>
@@ -42,7 +43,7 @@
       <guid>https://tamref.github.io/posts/migrated/dolnikov/</guid>
       <description>&lt;p&gt;Dol’nikov theorem이란 일반화된 Kneser graph의 chromatic number에 대한 정리이다. statement만 빌려 쓰면, 적절한 유한집합 $[n]$과 $F \subseteq 2^{[n]}$에 대해 다음이 성립한다:
 $
-\chi(\mar{KG}(F)) \ge \mar{cd} _ {2}(F)
+\chi(\mar{KG}(F)) \ge \mar{cd}_{2}(F)
 $
 이 글에서는 Borsuk-Ulam theorem을 이용하여 이를 증명한다.&lt;/p&gt;</description>
     </item>
@@ -58,7 +59,7 @@ $
       <link>https://tamref.github.io/posts/migrated/alexander-duality/</link>
       <pubDate>Tue, 26 Dec 2023 17:15:13 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/alexander-duality/</guid>
-      <description>Simplicial Complex에서 Alexander Duality는 다음과 같다. $ \tilde{H _ {i}}(A) \simeq \tilde{H}^{n-i-1}(S^{n} \setminus A) $ 이 글에서는 그 Combinatorial Variant와 Björner &amp;amp; Tancer (2007)의 증명을 다룬다.
+      <description>Simplicial Complex에서 Alexander Duality는 다음과 같다. $ \tilde{H_{i}}(A) \simeq \tilde{H}^{n-i-1}(S^{n} \setminus A) $ 이 글에서는 그 Combinatorial Variant와 Björner &amp;amp; Tancer (2007)의 증명을 다룬다.
 모든 set은 finite set이라고 가정한다. 또한, Alexnader Duality의 응용 등에 대해서는 다루지 않는다.
 기본적으로 공부 도중에 기록을 위해 만든 post이기 때문에 내용이 추후 가감될 수 있다.
 Alexander Dual Vertex set $V$ 위에 정의된 Simplicial Complex $\Delta$ 에 대해, Alexander Dual $\Delta^{\ast}$는 같은 Vertex Set 위에서 다음과 같이 정의된다.</description>
@@ -70,7 +71,7 @@ Alexander Dual Vertex set $V$ 위에 정의된 Simplicial Complex $\Delta$ 에 �
       <guid>https://tamref.github.io/posts/migrated/schwarz-lemma/</guid>
       <description>$\mathbb{C}$의 open unit disk $\mathbb{D}$에 대해, holomorphic function $f : \mathbb{D} \to \mathbb{D}$를 생각하자. Schwarz Lemma는 이러한 $f$의 성질에 대한 Lemma이고, 이는 $\mathbb{D}$의 Automorphism group을 characterize하는 데 큰 도움을 준다.
 Lemma (Schwarz) $f : \mb{D} \to \mb{D}$가 holomorphic이고, $f(0) = 0$을 만족한다고 하자. 다음 세 성질이 성립한다.
-$\abs{f(z)} \le \abs{z}$. 만약 $z _ 0 \neq 0$에 대해 $\abs{f(z _ 0)} = \abs{z _ 0}$가 성립한다면, $f$는 rotation. $\abs{f’(0)} \le 1$. 등호가 성립한다면 $f$는 rotation.</description>
+$\abs{f(z)} \le \abs{z}$. 만약 $z_0 \neq 0$에 대해 $\abs{f(z_0)} = \abs{z_0}$가 성립한다면, $f$는 rotation. $\abs{f’(0)} \le 1$. 등호가 성립한다면 $f$는 rotation. 증명은 기초 복소해석을 공부했다면 크게 어렵지는 않다.</description>
     </item>
     <item>
       <title>Non Existence of C1 Space Filling Curve</title>
@@ -84,7 +85,7 @@ $\abs{f(z)} \le \abs{z}$. 만약 $z _ 0 \neq 0$에 대해 $\abs{f(z _ 0)} = \abs
       <link>https://tamref.github.io/posts/migrated/kaist-pow-202009/</link>
       <pubDate>Tue, 26 Dec 2023 17:14:07 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/kaist-pow-202009/</guid>
-      <description>&lt;p&gt;Permutation $\pi : [n] \to [n]$에 대해 Displacement를 $D(\pi) = \sum _ {i=1}^{n} \lvert i - \pi (i) \rvert$로 정의한다. 주어진 양수 $k$에 대해, $D(\pi) = 2k$를 만족하는 짝순열의 개수를 $E _ {k}$, 홀순열의 개수를 $O _ {k}$라 두면 $E _ {k} - O _ {k} = (-1)^{k}\binom{n-1}{k}$임을 보여라.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Permutation $\pi : [n] \to [n]$에 대해 Displacement를 $D(\pi) = \sum_{i=1}^{n} \lvert i - \pi (i) \rvert$로 정의한다. 주어진 양수 $k$에 대해, $D(\pi) = 2k$를 만족하는 짝순열의 개수를 $E_{k}$, 홀순열의 개수를 $O_{k}$라 두면 $E_{k} - O_{k} = (-1)^{k}\binom{n-1}{k}$임을 보여라.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arzela Ascoli</title>
@@ -110,20 +111,24 @@ Vector space $W$의 subspace $U,V$에 대해 다음의 결과는 잘 알려져 �
       <pubDate>Tue, 26 Dec 2023 17:12:27 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/seemous-2019/</guid>
       <description>SEEMOUS 2019를 풀어보았다. 몇몇 문제는 풀이를 검증하기 위한 배경 지식이 부족해서 나중에 자세히 다루기로 한다.
-P1 $[0,1]$의 값을 갖는 무한 실수열 $\set{x _ {n}}$이 다음 조건을 만족하면 $\set{x _ {n}}$을 Devin sequence라고 한다.
-$ \lim _ {n \to \infty} \frac{1}{n}\sum _ {i=1}^{n}f(x _ {i}) = \int _ {0}^{1} f(x)dx $
-이 때, $\set{x _ {n}}$이 Devin sequence가 될 필요충분조건은
-$ \forall k \ge 0 \quad \lim _ {n \to \infty} \frac{1}{n}\sum _ {i=1}^{n}x _ {i}^{k} = \frac{1}{k+1} $</description>
+P1 $[0,1]$의 값을 갖는 무한 실수열 $\set{x_{n}}$이 다음 조건을 만족하면 $\set{x_{n}}$을 Devin sequence라고 한다.
+$ \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}f(x_{i}) = \int_{0}^{1} f(x)dx $
+이 때, $\set{x_{n}}$이 Devin sequence가 될 필요충분조건은
+$ \forall k \ge 0 \quad \lim_{n \to \infty} \frac{1}{n}\sum_{i=1}^{n}x_{i}^{k} = \frac{1}{k+1} $
+인 것임을 보여라.
+Solution sketch $\implies$는 자명.
+$\impliedby$는 Weierstrass.
+P2 $A_{1}, A_{2}, \cdots, A_{m} \in \mathfrak{M}_{n,n}(\mathbb{R})$에 대하여 다음을 만족하는 $\set{\varepsilon_{i}} \in \set{-1,1}^{m}$이 존재함을 보여라.</description>
     </item>
     <item>
       <title>Cayley Thm</title>
       <link>https://tamref.github.io/posts/migrated/cayley-thm/</link>
       <pubDate>Tue, 26 Dec 2023 17:12:03 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/cayley-thm/</guid>
-      <description>조합론에서의 Cayley&amp;rsquo;s theorem은 완전그래프 $K _ {n}$의 서로 다른 spanning tree가 $n^{n-2}$개라는 정리이다. 일반적으로는 그 쓰임보다도 아름다운 증명에 가치를 둔다. Functional graph를 알고 있다는 전제 하에 글을 작성했다.
+      <description>조합론에서의 Cayley&amp;rsquo;s theorem은 완전그래프 $K_{n}$의 서로 다른 spanning tree가 $n^{n-2}$개라는 정리이다. 일반적으로는 그 쓰임보다도 아름다운 증명에 가치를 둔다. Functional graph를 알고 있다는 전제 하에 글을 작성했다.
 Reference : Miklos Bona - [A Walk through Combinatorics]
 cf : $[n] := \set{1,\dots,n}.$
-Proof of the theorem (By A. Joyal) $K _ {n}$의 spanning tree의 개수를 $t _ {n}$이라고 두고, $n^{2}t _ {n} = n^{n}$임을 보인다.
+Proof of the theorem (By A. Joyal) $K_{n}$의 spanning tree의 개수를 $t_{n}$이라고 두고, $n^{2}t_{n} = n^{n}$임을 보인다.
 Definition. 정점 $n \ge 1$개의 트리 $T$에서 정점 $a, b$를 골라 $a$를 start, $b$를 end로 부르자.</description>
     </item>
     <item>
@@ -133,7 +138,7 @@ Definition. 정점 $n \ge 1$개의 트리 $T$에서 정점 $a, b$를 골라 $a$�
       <guid>https://tamref.github.io/posts/migrated/riemann-mapping/</guid>
       <description>Riemann Mapping은 $\mathbb{C}$의 모든 simply connected proper subset $\Omega$에 대해, Conformal map $f : \mathbb{D} \to \Omega$가 존재한다는 매우 강력한 정리이다. 여기서는 짧고 아름다운 nonconstructive한 증명을 다룬다.
 Ref: Stein &amp;amp; Shakarchi, Complex Analysis Ch.8
-Montel’s theorem 어떤 함수열 $\ev{f _ n}$이 수렴하는 부분수열 $\ev{f _ {n(k)}}$를 갖는다는 사실은 매우 유용하다. 물론 여기서 수렴은 모든 cpt subset에 대한 uniform convergence를 의미한다.
+Montel’s theorem 어떤 함수열 $\ev{f_n}$이 수렴하는 부분수열 $\ev{f_{n(k)}}$를 갖는다는 사실은 매우 유용하다. 물론 여기서 수렴은 모든 cpt subset에 대한 uniform convergence를 의미한다.
 Arzela-Ascoli Theorem의 경우, 정의역이 cpt set인 연속함수들의 함수족 $\mc{F}$가 uniformly bdd, equicontinuous면 위 성질을 만족한다는 것을 보장하고 있다.</description>
     </item>
     <item>
@@ -151,7 +156,8 @@ BOJ 15504. 프로그래밍 대결 제일 실력이 높은 선수를 제외하고
       <pubDate>Tue, 26 Dec 2023 17:02:49 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/ps_20220716/</guid>
       <description>교육용으로 사용한 10문제의 풀이입니다. 용어가 원본 문제와 다를 수 있습니다.
-BAPC 2021 F. &amp;ldquo;Fair Play&amp;rdquo; $n$이 홀수인 경우는 당연히 불가능하고, 짝수인 경우 $(b, p)$를 std::pair 와 같은 방식으로 정렬한 것을 $(b _ {1}, p _ {1}), \cdots, (b _ {n}, p _ {n})$이라고 둡시다. 이 때 유일하게 가능한 매칭 방법은 $(b _ {1}, p _ {1})$을 $(b _ {n}, p _ {n})$과, $(b _ {2}, p _ {2})$를 $(b _ {n-1}, p _ {n-1})$과 &amp;hellip; 매칭해주는 것입니다.</description>
+BAPC 2021 F. &amp;ldquo;Fair Play&amp;rdquo; $n$이 홀수인 경우는 당연히 불가능하고, 짝수인 경우 $(b, p)$를 std::pair 와 같은 방식으로 정렬한 것을 $(b_{1}, p_{1}), \cdots, (b_{n}, p_{n})$이라고 둡시다. 이 때 유일하게 가능한 매칭 방법은 $(b_{1}, p_{1})$을 $(b_{n}, p_{n})$과, $(b_{2}, p_{2})$를 $(b_{n-1}, p_{n-1})$과 &amp;hellip; 매칭해주는 것입니다. 이렇게 해서 벡터합이 모두 균일하다면 possible, 그렇지 않다면 impossible 입니다.
+BAPC 2021 I &amp;ldquo;Implementation Irregularities&amp;rdquo; $s_{i}$가 증가하는 순서대로 원소들을 배열하고, $s_{i} = -1$인 원소들을 제외합시다.</description>
     </item>
     <item>
       <title>Grundy Number 1</title>
@@ -169,9 +175,9 @@ Definition of Game “게임”은 상당히 광범위한 용어이지만, Sprag
       <link>https://tamref.github.io/posts/migrated/arc069-f/</link>
       <pubDate>Tue, 26 Dec 2023 17:01:47 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/arc069-f/</guid>
-      <description>수직선상에 깃발 $N$개를 놓되, $i$번째 깃발은 $x _ i$ 또는 $y _ i$에 놓아야 한다. 이 때 깃발들 사이의 최소 거리의 최댓값을 구하는 문제이다. 문제 링크
+      <description>수직선상에 깃발 $N$개를 놓되, $i$번째 깃발은 $x_i$ 또는 $y_i$에 놓아야 한다. 이 때 깃발들 사이의 최소 거리의 최댓값을 구하는 문제이다. 문제 링크
 Solution sketch 일단 파라메트릭 + 2-SAT을 해야 한다는 것 까지는 자명한 관찰이다. 즉, “가장 가까이 있는 깃발이 $d$ 이상 떨어져 있게 할 수 있는가?”에 관한 문제를 풀자. 그런데 2-SAT에 사용할 그래프 에지를 단순하게 만들면 $O(N^2)$개가 된다.
-Idea 1. 2-SAT Segment Tree 편의상 $x$좌표들을 정렬된 순서대로 $p _ {1}, p _ {2}, \cdots, $라 두자.</description>
+Idea 1. 2-SAT Segment Tree 편의상 $x$좌표들을 정렬된 순서대로 $p_{1}, p_{2}, \cdots, $라 두자.</description>
     </item>
     <item>
       <title>Swerc2019 K</title>
