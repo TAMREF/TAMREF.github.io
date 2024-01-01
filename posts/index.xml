@@ -10,9 +10,9 @@
     <atom:link href="https://tamref.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>st-ordering</title>
-      <link>https://tamref.github.io/posts/2024-01/st-ordering/</link>
+      <link>https://tamref.github.io/posts/2024/01/st-ordering/</link>
       <pubDate>Tue, 02 Jan 2024 02:41:57 +0900</pubDate>
-      <guid>https://tamref.github.io/posts/2024-01/st-ordering/</guid>
+      <guid>https://tamref.github.io/posts/2024/01/st-ordering/</guid>
       <description>Introduction An st-ordering (or bipolar odering) of a simple undirected graph is $G = (V, E)$ is a specific permutation $l$ of vertices, where any permutation $l$ induces a natural partial order on vertices $u &amp;lt; v \iff l(u) &amp;lt; l(v) \text{ and } uv \in E$. $l$ is called to be an st-ordering if and only if for a given pair of vertices $(s, t)$, $s$ (resp. $t$) is the unique minimal (resp.</description>
     </item>
     <item>
