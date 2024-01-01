@@ -6,8 +6,15 @@
     <description>Recent content in algorithm on TAMREF&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Dec 2023 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2024 02:41:57 +0900</lastBuildDate>
     <atom:link href="https://tamref.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>st-ordering</title>
+      <link>https://tamref.github.io/posts/2024-01/st-ordering/</link>
+      <pubDate>Tue, 02 Jan 2024 02:41:57 +0900</pubDate>
+      <guid>https://tamref.github.io/posts/2024-01/st-ordering/</guid>
+      <description>Introduction An st-ordering (or bipolar odering) of a simple undirected graph is $G = (V, E)$ is a specific permutation $l$ of vertices. Any permutation $l$ induces a natural partial order on vertices $u &amp;lt; v \iff l(u) &amp;lt; l(v) \text{ and } uv \in E$. $l$ is called to be an st-ordering if and only if for a given pair of vertices $(s, t)$, $s$ (resp. $t$) is the unique minimal (resp.</description>
+    </item>
     <item>
       <title>2-Approximating the Minimum Knapsack Problem</title>
       <link>https://tamref.github.io/posts/min-knapsack-2-approx/</link>
@@ -17,7 +24,7 @@
 We can devise a naive LP relaxation for this: $$ \begin{aligned} \text{minimize}\quad&amp;amp; \sum_{i} c_{i}x_{i}\\ \text{s.</description>
     </item>
     <item>
-      <title>Arc069 F</title>
+      <title>ARC 069 F. Flags</title>
       <link>https://tamref.github.io/posts/migrated/arc069-f/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/arc069-f/</guid>

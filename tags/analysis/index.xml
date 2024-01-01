@@ -9,13 +9,14 @@
     <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://tamref.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Arzela Ascoli</title>
+      <title>Arzela-Ascoli theorem</title>
       <link>https://tamref.github.io/posts/migrated/arzela-ascoli/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0900</pubDate>
       <guid>https://tamref.github.io/posts/migrated/arzela-ascoli/</guid>
-      <description>&lt;p&gt;Arzela-Ascoli theorem을 따로 알아야 할 상황이 생겨서, 해석개론에서 약간의 지름길을 타서 이 정리를 건드려보기로 했다.&lt;/p&gt;
-&lt;p&gt;Compactness에 대한 통찰을 요구한다.&lt;/p&gt;
-&lt;p&gt;Ref: 김성기, 김도한, 계승혁 - 해석개론&lt;/p&gt;</description>
+      <description>Arzela-Ascoli theorem을 따로 알아야 할 상황이 생겨서, 해석개론에서 약간의 지름길을 타서 이 정리를 건드려보기로 했다.
+Compactness에 대한 통찰을 요구한다.
+Ref: 김성기, 김도한, 계승혁 - 해석개론
+$N_{\varepsilon}(x) := \set{y \mid \norm{x - y} &amp;lt; \varepsilon }$. 무엇의 부분집합인지는 context에 의존한다. Uniformly continuous function 함수 $f$가 정의역 $X$에서 uniformly continuous하다는 말은, given $\varepsilon &amp;gt; 0$에 대해 $ \exists \delta ; \forall x, y \in X \quad \norm{x-y} &amp;lt; \delta \implies \norm{f(x) - f(y)} &amp;lt; \varepsilon $ 를 만족한다는 것을 말한다.</description>
     </item>
     <item>
       <title>Non Existence of C1 Space Filling Curve</title>
