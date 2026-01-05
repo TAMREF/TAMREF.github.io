@@ -1,0 +1,81 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "!CLAUDE.md"
+    - "!README.md"
+
+website:
+  title: "Changki Yun"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: publications.qmd
+        text: Publications
+      - href: posts.qmd
+        text: Blog
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
+include-in-header:
+  - text: |
+      <script>
+        window.MathJax = {
+          tex: {
+            tags: 'ams',
+            macros: {
+              bbR: '\\mathbb{R}',
+              bbZ: '\\mathbb{Z}',
+              bbN: '\\mathbb{N}',
+              bbC: '\\mathbb{C}',
+              cA: '\\mathcal{A}',
+              cB: '\\mathcal{B}',
+              cC: '\\mathcal{C}',
+              cD: '\\mathcal{D}',
+              cE: '\\mathcal{E}',
+              cF: '\\mathcal{F}',
+              cG: '\\mathcal{G}',
+              cH: '\\mathcal{H}',
+              cI: '\\mathcal{I}',
+              cJ: '\\mathcal{J}',
+              cK: '\\mathcal{K}',
+              cL: '\\mathcal{L}',
+              cM: '\\mathcal{M}',
+              cN: '\\mathcal{N}',
+              cO: '\\mathcal{O}',
+              cP: '\\mathcal{P}',
+              cQ: '\\mathcal{Q}',
+              cR: '\\mathcal{R}',
+              cS: '\\mathcal{S}',
+              cT: '\\mathcal{T}',
+              cU: '\\mathcal{U}',
+              cV: '\\mathcal{V}',
+              cW: '\\mathcal{W}',
+              cX: '\\mathcal{X}',
+              cY: '\\mathcal{Y}',
+              cZ: '\\mathcal{Z}',
+              tO: '\\widetilde{O}',
+              hO: '\\hat{O}',
+              tT: '\\widetilde{\\Theta}',
+              ev: ['\\left\\langle #1 \\right\\rangle', 1],
+              abs: ['\\left\\lvert #1 \\right\\rvert', 1],
+              norm: ['\\left\\lVert #1 \\right\\rVert', 1],
+              poly: '\\operatorname{poly}',
+              pd: '\\partial',
+            }
+          }
+        };
+      </script>

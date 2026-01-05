@@ -1,0 +1,15 @@
+---
+title: "Changki Yun (윤창기, TAMREF)"
+---
+
+![](asdf.jpg){width="50%"}
+
+# Bio
+
+Hi! I am an undergraduate student in Department of Mathematical Sciences, Seoul National University, Republic of Korea.
+
+I'm broadly interested in the design and analysis of algorithms, combinatorics, and their applications. Currently, I'm working on **graph algorithms** in parallel and distributed setup, and LP-based approximation algorithms on combinatorial optimization problems.
+
+# Contact
+
+- [Email](mailto:tamref.yun@snu.ac.kr)

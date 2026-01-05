@@ -1,0 +1,49 @@
+---
+title: "Welcome Post: Math and Citations Demo"
+date: 2026-01-05
+categories: [demo]
+---
+
+This post demonstrates equation numbering, cross-references, and citations.
+
+## Numbered Equations {#sec-1}
+
+A single numbered equation:
+
+$$
+e^{i\pi} + 1 = 0
+$$ {#eq-euler}
+
+We can reference @eq-euler using Quarto cross-references.
+Let me test @sec-1 works for the section as well. Hello?
+
+OK, what about inline math? $a$ it works.
+
+Does the custom command work? $\bbZ$ Good!
+
+Let me test a norm: $\norm{\mathbf{A}}$.
+
+$$
+\abs{S} \ge 2
+$$
+
+The complexity is denoted by $\tO(n)$ or $\poly(k)$
+
+## Align Environment
+
+The align environment also produces numbered equations:
+
+$$
+\begin{align}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \label{eq:gauss} \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \label{eq:faraday}
+\end{align}
+$$
+
+We can reference these with `\eqref`: see \eqref{eq:gauss} and \eqref{eq:faraday}.
+
+## Citations
+
+Pandoc-style citations work as expected [@arXiv:2504.06033].
+
+## References
