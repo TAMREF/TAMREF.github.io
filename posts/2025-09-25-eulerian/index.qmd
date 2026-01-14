@@ -1,0 +1,83 @@
+---
+title: "Counting Eulerian Circuits: From Easy to Hard"
+date: "2025-09-25"
+categories: [combinatorics, complexity, graph-theory]
+lang: ko
+---
+
+이 글은 GPT 5가 최종 편집하였다. 썸네일도 마찬가지인데, 예전보다는 좀 발전한 것 같다.
+
+그래프에 Euler Circuit이 존재할 조건은 방향그래프, 무방향그래프에서 모두 쉽게 판정할 수 있다. 그렇다면 가능한 Eulerian Circuit의 개수는 몇 개일까? 신기하게도, 이 경우에 대한 답은 방향그래프에서 훨씬 쉽다는 것이 알려져 있다.
+
+## Directed Graph : BEST theorem
+
+결론부터 말해, 방향그래프의 오일러 투어 개수는 $O(n^3)$ (혹은 $O(n^\omega)$) 시간 안에 구할 수 있다.
+
+::: {.callout-note}
+## BEST Theorem [@BEST1951]
+
+방향그래프 $G$의 Eulerian Circuit 개수를 $\mathrm{ec}(G)$라 하고, 고정된 $w \in V(G)$에 대해 $w$를 루트로 하는 arborescence($w$를 루트로 하고, 무방향 그래프로 보면 트리이며 간선은 부모에서 자식으로 향하는 spanning subgraph)의 개수를 $t_{w}(G)$라 하자. 그러면 다음이 성립한다.
+\begin{equation}
+\mathrm{ec}(G) = t_{w}(G) \prod_{v \in V} (\deg(v) - 1)!
+\label{eq:best}
+\end{equation}
+여기서 $\deg(v)$는 그래프가 Eulerian이므로 outdeg와 indeg가 같으니 그냥 $\deg(v)$로 쓸 수 있다.
+:::
+
+$t_{w}(G)$는 Laplacian의 entry를 방향그래프에 맞게 정의한다. 즉, $i \to j$ 간선이 있으면 $L_{ij} = -1$, $L_{ji} = 1$로 두고, diagonal entry는 $i$의 (loop를 제외한) indegree로 둔다. 이후 무방향그래프의 matrix-tree theorem처럼 determinant를 계산한다. 이제 각 arborescence와 Eulerian circuit이 정확히 $\prod_{v} (\deg(v) - 1)!$-대-1로 대응됨을 보이면 된다. $w$에서 Eulerian circuit을 따라가며 DFS 트리를 구성할 수 있고, 두 트리가 같아지는 경우는 서브트리의 탐색 순서를 조정하는 $(\deg(v) - 1)!$가지 경우뿐이다. 루트 $w$에서는 $\deg(w)!$이라고 생각할 수 있지만, circuit이므로 첫 방문 서브트리를 고정해야 한다.
+
+참고로, SNUPC 2025에 이 정리를 활용해 풀 수 있는 문제가 출제되었다.
+
+## Undirected Graph : #P-complete
+
+#P-complete 문제는 counting 문제에서 중요한 hardness class이다. 가장 쉬운 예로 3-SAT(혹은 일반적인 SAT)의 해 개수를 세는 #SAT 문제가 있다.
+
+잘 알려져 있고, 유용하지만 증명은 복잡해 잘 쓰이지 않는 정리로는 Valiant (1979)의 "이분그래프의 perfect matching 개수를 세는 문제는 #P-complete이다" [@Valiant1979]가 있다.
+
+다음 단계로 무방향 그래프의 Euler Circuit 개수를 세는 문제를 Perfect Matching 개수 문제로 환원할 수 있다.
+
+- #Bipartite Perfect Matchings $\Rightarrow$ #Eulerian Orientation [@MihailWinkler1992]
+- #Eulerian Orientation $\Rightarrow$ #Orbs $\Rightarrow$ #Euler Circuits [@BrightwellWinkler2005]
+
+### Step 1. Matching to Eulerian Orientations
+
+모든 그래프는 parallel edge를 허용하는 multigraph로 가정한다.
+
+무방향 이분그래프 $G = (A \sqcup B, E)$가 주어졌다고 하자. $n := \abs{A} = \abs{B}$, $m := \abs{E}$라 두자. source와 sink에 해당하는 정점 $s, t$를 추가해, 각 $a \in A$에 대해 $(s, a)$ 간선을 $\deg(a) - 2$개, 각 $b \in B$에 대해 $(b, t)$ 간선을 $\deg(b) - 2$개 추가한 그래프 $G'$를 만든다. $G$에서 차수가 1인 정점은 유일한 매칭 정점이 대응되므로 처음부터 제거해도 매칭 개수에는 영향이 없다. 따라서 $\deg(a) \ge 2, \deg(b) \ge 2$라고 가정할 수 있다.
+
+이제 $X_j$를 $G'$의 orientation 중에서 $A, B$의 indeg = outdeg 조건을 만족하고, $s$의 indeg - outdeg가 $j$인 것의 개수라고 하자. 즉, $(s, t)$ 꼴의 directed edge를 $j$개 추가하면 Eulerian이 되는 orientation의 개수이다. (단, $j < 0$이면 $(t, s)$를 $\abs{j}$개 추가해야 한다.)
+
+이때 $X_{m - 2n}$은 정확히 $G$의 perfect matching 개수와 같다. $s$로 $m - 2n$개의 간선이 모두 향한다는 것은 각 $a \in A$에 대해 $\deg(a) - 2$개의 간선이 전부 $s$로 향한다는 뜻이다. 따라서 $E$의 간선 중 단 하나만 $a$에서 나갈 수 있다. 마찬가지로 각 $b \in B$에서는 단 하나의 간선만 들어올 수 있다. 결국 $A \times B$ 부분만 보면 perfect matching과 일대일 대응한다.
+
+그렇다면 $m - 2n$개의 $(s, t)$ 방향 간선을 이어 orientation의 개수를 세면 되지 않을까? 하지만 방향 + 무방향 혼합 그래프의 orientation 개수를 세는 것은 우리가 다룰 수 있는 범위가 아니다. 무방향 간선을 추가하면 그 중 일부는 $(s, t)$, 일부는 $(t, s)$로 orient될 수 있기 때문이다. 정확히 말해, $G'$에 $(s, t)$ 무방향 간선을 $k$개 추가한 그래프를 $G_k$, 그리고 $G_k$의 Eulerian orientation 개수를 $\mathcal{O}(G_k)$라 하면 다음이 성립한다.
+\begin{equation}
+\mathcal{O}(G_{k}) = \sum_{j=0}^{k} \binom{k}{j} X_{j-(k-j)}
+\label{eq:orientation}
+\end{equation}
+
+따라서 $\mathcal{O}(G_{m \bmod 2}), \dots, \mathcal{O}(G_{m - 2n})$을 계산하면 $X_{m - 2n}$을 구할 수 있다. 식의 개수는 $\abs{(m - 2n) / 2}$개이고 변수 개수도 동일하다. ($X_{-k} = X_{k}$이기 때문.) 연립 방정식을 풀면 $X_{m - 2n}$을 계산할 수 있으므로, $\mathcal{O}(\cdot)$를 $O(m)$번 호출해 bipartite perfect matching을 구할 수 있다. 따라서 Eulerian Orientation 개수를 세는 것은 #P-complete이다.
+
+### Step 2. Eulerian Orientation to Orbs and Circuits
+
+#P-completeness를 보일 때 자주 쓰이는 기법은 임의의 홀수 소수 $p$에 대해 경우의 수를 mod $p$로 세는 것이 어렵다는 것을 보이는 것이다. 경우의 수가 $2^{\poly(n)}$ 스케일이므로 충분히 많은 서로 다른 $p$에 대해 construction을 반복하면 CRT로 원래 값을 복원할 수 있다.
+
+무방향 그래프 $G$의 **Orb**는, 고정된 $r \in V(G)$에 대해 $G$의 eulerian orientation $\vec{G}$와 $r$을 루트로 하는 arborescence $T$의 pair $(\vec{G}, T)$를 말한다. BEST theorem에 의해 orb와 circuit 개수는 $\prod_{v \in V} (\deg(v) - 1)!$-대-1 대응이 있으므로, Orb 개수를 세는 것이 어렵다는 것만 보이면 된다. 역시 그래프는 multigraph라 가정한다.
+
+홀수 소수 $p$를 고정하고, $G$의 각 간선을 $p$개의 parallel edge로 대체한다. 그리고 새로운 루트 정점 $r$을 추가해 각 정점과 $r$을 두 개의 parallel edge로 연결한다. 이렇게 만든 그래프를 $G_p$라 하자. $G_p$의 orb 수와 $G$의 eulerian orientation 수 사이에 mod $p$ 관계가 있음을 보이면 된다.
+
+$G_p$의 orb 중에서 각 간선이 $p$개 모두 같은 방향이고, 트리에는 $(r, v)$ 꼴 간선만 사용된다면 이를 **special orb**라 하자. indeg - outdeg 조건을 mod $p$로 보면, 나머지 한 간선은 $(v, r)$ 형태로 orient되어야 한다. 따라서 $(r, v)$, $(v, r)$을 제거하면 이는 $G$의 eulerian orientation과 정확히 대응한다. 즉, $G$의 eulerian orientation이 $N$가지라면 special orb는 $2^{n} N$가지이다.
+
+그렇지 않은 경우는 다음과 같다.
+
+1. 어떤 간선 $e \in E(G)$가 있어 $0 < k < p$개만 $G_p$에서 같은 방향으로 orient된 경우
+   a. $e$의 복사본 중 하나가 arborescence에 포함된 경우
+   b. 포함되지 않은 경우
+2. 어떤 간선 $e \in E(G)$가 있어 $p$개 모두 같은 방향이고, 트리에도 사용된 경우
+
+- Case 1a에서는 방향을 결정하고 트리에 포함될 간선을 고르면 $k \binom{p}{k}$ 또는 $(p-k)\binom{p}{k}$개의 isomorphic orb가 생긴다.
+- Case 1b에서도 비슷하게 $\binom{p}{k}$개의 isomorphic orb가 존재한다.
+- Case 2에서는 트리에 포함될 간선을 고르는 $p$개의 isomorphic orb가 생긴다.
+
+이 경우들은 겹치지 않으므로 non-special orb의 개수는 $p$의 배수이다. 따라서 $G_p$의 orb 개수는 $2^n N \pmod{p}$이고, 이로부터 $N \pmod{p}$를 구할 수 있다.
+
+## References

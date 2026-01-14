@@ -1,10 +1,12 @@
 ---
 title: "Publications"
 nocite: |
-  @*
+  @arXiv:2504.06033
 ---
 
 ## Preprints
+
+- Parallel Small Vertex Connectivity in Near-Linear Work and Polylogarithmic Depth [@arXiv:2504.06033]
 
 ::: {#refs}
 :::

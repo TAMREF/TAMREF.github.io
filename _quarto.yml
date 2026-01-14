@@ -6,6 +6,8 @@ project:
     - "posts/**/*.qmd"
     - "!CLAUDE.md"
     - "!README.md"
+  resources:
+    - .nojekyll
 
 website:
   title: "Changki Yun"
