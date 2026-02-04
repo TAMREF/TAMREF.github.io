@@ -8,6 +8,7 @@ toc: true
 Project TCS is a reading group on theoretical computer science, which have been hosted by Jaehyun Koo and Changki Yun. We meet regularly to discuss recent papers and classic results in algorithms, complexity theory, combinatorics, and related areas.
 If you are interested in joining, feel free to reach out to me (Changki Yun).
 
+Some past slides are available in the [repository](https://github.com/TAMREF/project-tcs).
 All past talks can be found in the [playlist](https://youtube.com/playlist?list=PLT8wp0ylhRbNFW_MwEF5bl0XVKdM_TUg7&si=lRDgVjfkEwuzo00u).
 
 ## Winter 2026
