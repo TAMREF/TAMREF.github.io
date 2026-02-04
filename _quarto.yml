@@ -19,6 +19,8 @@ website:
         text: Publications
       - href: posts.qmd
         text: Blog
+      - href: project-tcs.qmd
+        text: Project TCS
 
 format:
   html:

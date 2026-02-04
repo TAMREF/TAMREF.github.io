@@ -1,0 +1,31 @@
+---
+title: "Project TCS"
+toc: true
+---
+
+## About
+
+Project TCS is a reading group on theoretical computer science, which have been hosted by Jaehyun Koo and Changki Yun. We meet regularly to discuss recent papers and classic results in algorithms, complexity theory, combinatorics, and related areas.
+If you are interested in joining, feel free to reach out to me (Changki Yun).
+
+All past talks can be found in the [playlist](https://youtube.com/playlist?list=PLT8wp0ylhRbNFW_MwEF5bl0XVKdM_TUg7&si=lRDgVjfkEwuzo00u).
+
+## Winter 2026
+
+In winter 2026, we mostly follow the lecture note of [COS 597B](https://www.cs.princeton.edu/~hy2/teaching/fall24-cos597B/index.html) about recent advances in graph algorithms. Some outdated topics may be substituted by the hosts.
+
+### Schedule
+
+Each talk will start at Tuesday 9am (ET or EDT), equivalently 11pm (or 12am) KST. The talks will be given in Korean.
+
+| Date | Topic | Speaker |
+|-------|--------------------------------|-------------|
+| Jan 27 | Directed Low-Diameter Decomposition for Negative-Weight Shortest Path | Jaehyun Koo (MIT) |
+| Feb 03 | The Expander Hierarchy and its application to dynamic algorithm | Changki Yun (SNU) |
+| Feb 24 | Maximum Flow by Augmenting Paths in $n^{2+o(1)}$ Time | Sanghoon Park (SNU) |
+| Mar 03 | Deterministic Decremental SSSP and Approximate Min-Cost Flow in Almost-Linear Time | Donghyeon Lee (SNU) |
+| Mar 10 | Decremental Strongly-Connected Components and Single-Source Reachability in Near-Linear Time | Jongseo Lee (KAIST) |
+| Mar 17 | TBD | Kijun Shin (CMU) |
+| Mar 24 | TBD | Sehyeon Park (SNU) |
+| Mar 31 | Deterministic Near-Linear Time Min Cut on Weighted Graphs | Dahoon Lee (SNU) |
+| Apr 07 | TBD | Yihwan Chae (SNU) |
