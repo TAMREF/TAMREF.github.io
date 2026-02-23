@@ -23,7 +23,7 @@ Each talk will start at Tuesday 9am (ET or EDT), equivalently 11pm (or 12am) KST
 |-------|--------------------------------|-------------|
 | Jan 27 | Directed Low-Diameter Decomposition for Negative-Weight Shortest Path | Jaehyun Koo (MIT) |
 | Feb 03 | The Expander Hierarchy and its application to dynamic algorithm | Changki Yun (SNU) |
-| Feb 24 | Maximum Flow by Augmenting Paths in $n^{2+o(1)}$ Time | Sanghoon Park (SNU) |
+| Feb 24 | Maximum Flow by Augmenting Paths in $\tO(n^2)$ Time | Sanghoon Park (SNU) |
 | Mar 03 | Deterministic Decremental SSSP and Approximate Min-Cost Flow in Almost-Linear Time | Donghyeon Lee (SNU) |
 | Mar 10 | Decremental Strongly-Connected Components and Single-Source Reachability in Near-Linear Time | Jongseo Lee (KAIST) |
 | Mar 17 | TBD | Kijun Shin (CMU) |
