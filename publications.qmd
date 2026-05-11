@@ -2,11 +2,13 @@
 title: "Publications"
 nocite: |
   @arXiv:2504.06033
+  @lee2026optimallearningaugmentedalgorithmonline
 ---
 
 ## Preprints
 
 - Parallel Small Vertex Connectivity in Near-Linear Work and Polylogarithmic Depth [@arXiv:2504.06033]
+- Optimal Learning-Augmented Algorithm for Online Bidding [@lee2026optimallearningaugmentedalgorithmonline]
 
 ::: {#refs}
 :::
