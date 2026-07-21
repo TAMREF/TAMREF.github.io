@@ -1,14 +1,26 @@
 ---
 title: "Publications"
-nocite: |
-  @arXiv:2504.06033
-  @lee2026optimallearningaugmentedalgorithmonline
+toc: false
 ---
+
+Authors are ordered alphabetically.
+
+## Conference Publications
+
+::: {.pub}
+[Parallel Small Vertex Connectivity in Near-Linear Work and Polylogarithmic Depth](https://arxiv.org/abs/2504.06033){.pub-title}
+
+[Yonggang Jiang, Changki Yun]{.pub-authors}
+
+[FOCS 2026]{.pub-venue} [arXiv](https://arxiv.org/abs/2504.06033){.pub-link}
+:::
 
 ## Preprints
 
-- Parallel Small Vertex Connectivity in Near-Linear Work and Polylogarithmic Depth [@arXiv:2504.06033]
-- Optimal Learning-Augmented Algorithm for Online Bidding [@lee2026optimallearningaugmentedalgorithmonline]
+::: {.pub}
+[Optimal Learning-Augmented Algorithm for Online Bidding](https://arxiv.org/abs/2605.07349){.pub-title}
 
-::: {#refs}
+[Changyeol Lee, Dahoon Lee, Jongseo Lee, Yongho Shin, Changki Yun]{.pub-authors}
+
+[arXiv 2026]{.pub-venue} [arXiv](https://arxiv.org/abs/2605.07349){.pub-link}
 :::

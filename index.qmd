@@ -1,15 +1,38 @@
 ---
-title: "Changki Yun (윤창기, TAMREF)"
+title: "Changki Yun"
+toc: false
 ---
 
-![](asdf.jpg){width="50%"}
+::: {.grid .bio-grid}
 
-# Bio
+::: {.g-col-12 .g-col-md-8}
+[윤창기 · TAMREF]{.bio-alias}
 
-Hi! I am an undergraduate student in Department of Mathematical Sciences, Seoul National University, Republic of Korea.
+I am an incoming PhD student in the Department of Computer Science at the
+University of Maryland, College Park, where I will be fortunate to be advised by
+Prof. [MohammadTaghi Hajiaghayi](https://www.cs.umd.edu/~hajiagha/).
+I received a B.Sc. from the Department of Mathematical Sciences at Seoul National University.
 
-I'm broadly interested in the design and analysis of algorithms, combinatorics, and their applications. Currently, I'm working on **graph algorithms** in parallel and distributed setup, and LP-based approximation algorithms on combinatorial optimization problems.
+I am broadly interested in the design and analysis of algorithms and
+combinatorics. Recently, I have been working on **graph algorithms** in parallel
+and distributed settings, and LP-based approximation algorithms for
+combinatorial optimization.
 
-# Contact
+::: {.bio-links}
+[Email](mailto:tamref.yun@snu.ac.kr) · [GitHub](https://github.com/TAMREF)
+:::
+:::
 
-- [Email](mailto:tamref.yun@snu.ac.kr)
+::: {.g-col-12 .g-col-md-4}
+![](assets/profile.jpg){.bio-photo fig-alt="Photo of Changki Yun"}
+:::
+
+:::
+
+## News
+
+::: {.news-list}
+- [Sep 2026]{.news-date} I will join the University of Maryland as a PhD student.
+- [Jul 2026]{.news-date} *Parallel Small Vertex Connectivity in Near-Linear
+  Work and Polylogarithmic Depth* is accepted to **FOCS 2026**.
+:::

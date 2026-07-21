@@ -1,26 +1,314 @@
-/* Minimal typography tweaks */
+/* ---------------------------------------------------------------------------
+   Design tokens
+   Palette: ink on paper, one accent (UMD red, deepened for text contrast).
+   Type: Source Serif 4 for prose (harmonizes with MathJax), Inter for UI.
+--------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Noto+Serif+KR:wght@400;600;700&display=swap');
+
+:root {
+  --ink: #191919;
+  --muted: #6b6b6b;
+  --hairline: #e6e6e6;
+  --paper: #ffffff;
+  --accent: #c41230;
+  --accent-dark: #93001f;
+  --code-bg: #f6f6f4;
+  --serif: "Source Serif 4", "Noto Serif KR", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* ---------------------------------------------------------------------------
+   Base typography
+--------------------------------------------------------------------------- */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
 }
 
-/* Math readability */
-.MathJax {
-  font-size: 1.1em;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  color: var(--ink);
 }
 
-/* Code blocks */
+h1, .title {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  border: none;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.8rem;
+}
+
+#title-block-header {
+  margin-bottom: 1.6rem;
+}
+
+#title-block-header .quarto-title-meta-heading {
+  font-family: var(--sans);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+  text-decoration-color: var(--accent-dark);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Navbar: quiet, hairline-separated
+--------------------------------------------------------------------------- */
+
+.navbar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--sans);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: 650;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.navbar .nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------------------------------
+   Homepage: bio + news
+--------------------------------------------------------------------------- */
+
+.bio-grid {
+  margin-top: 0.4rem;
+  column-gap: 2.5rem;
+}
+
+.bio-alias {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
+.bio-photo {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.bio-links {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-top: 1.4rem;
+}
+
+.news-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.1rem;
+}
+
+.news-list li {
+  position: relative;
+  padding-left: 6em;
+  margin-bottom: 0.7rem;
+}
+
+.news-date {
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------------------
+   Publications
+--------------------------------------------------------------------------- */
+
+.pub {
+  margin-bottom: 1.7rem;
+}
+
+.pub p {
+  margin: 0.15rem 0;
+}
+
+.pub-title,
+.pub-title a {
+  font-weight: 600;
+  font-size: 1.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.pub-title:hover,
+.pub-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.97em;
+}
+
+.pub-venue {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.76em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border: 1px solid rgba(196, 18, 48, 0.35);
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 999px;
+  padding: 0.08em 0.65em;
+  margin-right: 0.5em;
+}
+
+.pub-link {
+  font-family: var(--sans);
+  font-size: 0.88em;
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------------------------------
+   Blog listing
+--------------------------------------------------------------------------- */
+
+.quarto-listing .listing-title,
+div.quarto-post .listing-title {
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+div.quarto-post {
+  border-bottom: 1px solid var(--hairline);
+}
+
+div.quarto-post a {
+  color: var(--ink);
+}
+
+div.quarto-post .metadata {
+  font-family: var(--sans);
+}
+
+/* Hide the empty placeholder column for posts without a thumbnail image */
+div.quarto-post .thumbnail:has(.listing-item-img-placeholder) {
+  display: none;
+}
+
+div.quarto-post .listing-categories .listing-category,
+.quarto-title .quarto-categories .quarto-category {
+  font-family: var(--sans);
+  border-color: var(--hairline);
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------------------
+   Post content: math, code, tables
+--------------------------------------------------------------------------- */
+
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.1em 0;
+}
+
 pre {
+  background: var(--code-bg);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
   padding: 1em;
   overflow-x: auto;
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: var(--mono);
+  font-size: 0.9em;
 }
 
-/* Content width */
-.content {
-  max-width: 48em;
+.table thead th {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.table tbody td {
+  border-color: var(--hairline);
+}
+
+.callout {
+  border-radius: 8px;
+}
+
+/* Sidebar TOC */
+
+#TOC, nav[role="doc-toc"] {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+/* Quarto sets cosmo blue with !important on TOC states; match its specificity */
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
+  border-left-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a:hover,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a:hover {
+  color: var(--accent-dark) !important;
 }
