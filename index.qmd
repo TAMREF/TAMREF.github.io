@@ -9,7 +9,7 @@ toc: false
 [윤창기 · TAMREF]{.bio-alias}
 
 I am an incoming PhD student in the Department of Computer Science at the
-University of Maryland, College Park, where I will be fortunate to be advised by
+University of Maryland, College Park, where I'm fortunate to be advised by
 Prof. [MohammadTaghi Hajiaghayi](https://www.cs.umd.edu/~hajiagha/).
 I received a B.Sc. from the Department of Mathematical Sciences at Seoul National University.
 
