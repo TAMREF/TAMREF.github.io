@@ -8,7 +8,7 @@ toc: false
 ::: {.g-col-12 .g-col-md-8}
 [윤창기 · TAMREF]{.bio-alias}
 
-I am an incoming PhD student in the Department of Computer Science at the
+I am a first-year PhD student in the Department of Computer Science at the
 University of Maryland, College Park, where I'm fortunate to be advised by
 Prof. [MohammadTaghi Hajiaghayi](https://www.cs.umd.edu/~hajiagha/).
 I received a B.Sc. from the Department of Mathematical Sciences at Seoul National University.
@@ -19,7 +19,7 @@ and distributed settings, and LP-based approximation algorithms for
 combinatorial optimization.
 
 ::: {.bio-links}
-[Email](mailto:tamref.yun@snu.ac.kr) · [GitHub](https://github.com/TAMREF)
+[Email](mailto:ckyun@umd.edu) · [GitHub](https://github.com/TAMREF)
 :::
 :::
 
@@ -32,7 +32,9 @@ combinatorial optimization.
 ## News
 
 ::: {.news-list}
-- [Sep 2026]{.news-date} I will join the University of Maryland as a PhD student.
+- [Sep 2026]{.news-date} *Optimal Learning-Augmented Algorithm for Online Bidding* is
+  accepted to **NeurIPS 2026**.
+- [Sep 2026]{.news-date} I joined the University of Maryland as a PhD student.
 - [Jul 2026]{.news-date} *Parallel Small Vertex Connectivity in Near-Linear
   Work and Polylogarithmic Depth* is accepted to **FOCS 2026**.
 :::

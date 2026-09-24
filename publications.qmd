@@ -22,5 +22,5 @@ Authors are ordered alphabetically.
 
 [Changyeol Lee, Dahoon Lee, Jongseo Lee, Yongho Shin, Changki Yun]{.pub-authors}
 
-[arXiv 2026]{.pub-venue} [arXiv](https://arxiv.org/abs/2605.07349){.pub-link}
+[NeurIPS 2026]{.pub-venue} [arXiv](https://arxiv.org/abs/2605.07349){.pub-link}
 :::
