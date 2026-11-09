@@ -8,5 +8,5 @@ toc: false
 
 [Yonggang Jiang, Changki Yun]{.pub-authors}
 
-[FOCS 2026]{.pub-venue} [Full slides (PDF)](assets/slides/focs-2026-vertex-connectivity-full.pdf){.pub-link}
+[FOCS 2026]{.pub-venue} [15-minute slides (PDF)](assets/slides/focs-2026-vertex-connectivity-15min.pdf){.pub-link} · [Extended slides (PDF)](assets/slides/focs-2026-vertex-connectivity-full.pdf){.pub-link}
 :::
