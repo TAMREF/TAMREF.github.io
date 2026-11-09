@@ -1,0 +1,12 @@
+---
+title: "Talks"
+toc: false
+---
+
+::: {.pub}
+[Parallel Small Vertex Connectivity in Near-Linear Work and Polylogarithmic Depth](assets/slides/focs-2026-vertex-connectivity-full.pdf){.pub-title}
+
+[Yonggang Jiang, Changki Yun]{.pub-authors}
+
+[FOCS 2026]{.pub-venue} [Full slides (PDF)](assets/slides/focs-2026-vertex-connectivity-full.pdf){.pub-link}
+:::

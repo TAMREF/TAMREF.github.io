@@ -9,6 +9,7 @@ project:
   resources:
     - .nojekyll
     - "favicon/**"
+    - "assets/slides/**"
 
 website:
   title: "Changki Yun"
@@ -22,6 +23,8 @@ website:
         text: About
       - href: publications.qmd
         text: Publications
+      - href: talks.qmd
+        text: Talks
       - href: posts.qmd
         text: Blog
       - href: project-tcs.qmd
